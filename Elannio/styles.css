@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.Site {
+    width: 20px;
+    flex: 1;
+
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: none;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    overflow: hidden;
+}
+
+li.nav-item {
+    float: left;
+}
+
+li.nav-item a {
+    display: block;
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Estilos para os links quando o mouse está sobre eles */
+li.nav-item a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}
