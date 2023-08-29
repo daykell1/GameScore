@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameScore+</title>
     <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <ul class="navbar">
-        <li class="nav-item"><a href="#">Página Inicial</a></li>
-        <li class="nav-item"><a href="#">Sobre</a></li>
-        <li class="nav-item"><a href="#">Serviços</a></li>
-        <li class="nav-item"><a href="#">Contato</a></li>
-        <li class="GameScore"><a href="#"><img src="GameScore.jpg"></a></li>
+        <li class="img"><a href="#"><img src="img/GameScore.png"></a></li>
+        <li class="BarraPesquisa"><form action="/pagina-de-resultados.html" method="GET">
+        <div class="barra-de-pesquisa">
+            <input type="text" name="q" placeholder="Search..." />
+            <span class="lupa"><i class="fas fa-search"></i></span>
+        </div>
+    </form>
+</li>
+        <li class="game"><a href="#">Game</a></li>
+        <li class="sing-in"><a href="#">Sing In </a></li>
     </ul>
-    <div class="Cabeçalho"></div><img src="GameScore.jpg">
-    <div class="pesquisa"><form action="/pagina-de-resultados.html" method="get">
-        <label for="search"></label>
-        <input type="text" id="search" name="q" placeholder="Pesquisar...">
-        <input type="submit" value="Pesquisar">
-    </div>
 </div>
 </body>
 </html>
