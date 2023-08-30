@@ -11,7 +11,7 @@ ul.navbar {
     padding: 0;
     background-color: #0D0D12;
     overflow: hidden;
-    display: flex; /* Usando flexbox para alinhar os itens horizontalmente */
+    display: flex; /*Usando flexbox para alinhar os itens horizontalmente */
     justify-content: center; /* Centralizar horizontalmente os itens */
     align-items: center; /* Centralizar verticalmente os itens */
     width: 100%;
@@ -23,7 +23,8 @@ li.game a, li.sing-in a  {
     color: rgb(222, 210, 210);
     padding: 14px 16px;
     text-decoration: none;
-    margin-right: 40px;
+    margin-right: 5px;
+    font-size: 17px;
 }
 
 /* Estilos para os links quando o mouse está sobre eles */
@@ -46,7 +47,7 @@ body {
     align-items: center;
     width: 450px;
     padding: 9px;
-    background-color: white; /* Fundo branco */
+    background-color: white; 
     border: 2px solid #ccc;
     border-radius: 20px;
     font-size: 16px;
@@ -63,16 +64,14 @@ body {
 
 /* Estilo para o ícone da lupa */
 .lupa {
-    margin-right: 10px; /* Espaço entre o ícone e a entrada de texto */
-    font-size: inherit; /* Herda o tamanho da fonte do pai (remova o tamanho definido anteriormente) */
-    color: #555; /* Cor personalizada para o ícone */
+    margin-right: 10px;
+    font-size: inherit;
+    color: #555;
     cursor: pointer;
 }
 
-/* Estilo para a imagem */
 .img img {
     width: 500px;
     height: auto;
-    margin-left: 50px;
     margin-top: 5px;
 }
