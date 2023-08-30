@@ -1,0 +1,15 @@
+#principal{
+    background: #333 100%;
+}
+#menu{
+    background: black;
+    padding: 10px;
+    
+}
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+   text-align: right;
+
+}
