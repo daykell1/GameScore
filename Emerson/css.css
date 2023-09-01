@@ -22,3 +22,15 @@
 #menu a:hover {
     text-decoration: underline;
 }
+.formato_texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif  15px;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px; /* Adicione margem para espaçamento entre os links */
+}
+.forma{
+    background:  #483C32;
+    padding: 10px;
+    width: 270px;
+    height: 100px;
+}
