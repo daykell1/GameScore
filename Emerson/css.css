@@ -1,15 +1,24 @@
-#principal{
-    background: #333 100%;
+#principal {
+    background: #333;
+    margin: 0;
+    padding: 0;
 }
-#menu{
+
+#menu {
     background: black;
     padding: 10px;
-    
+    display: flex; /* Utilize flexbox para alinhar os itens à direita */
+    justify-content: flex-end;
 }
-a{
+
+#menu a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: white;
-   text-align: right;
+    margin: 0 10px; /* Adicione margem para espaçamento entre os links */
+}
 
+/* Estilize o link quando passar o mouse por cima */
+#menu a:hover {
+    text-decoration: underline;
 }
