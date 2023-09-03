@@ -34,3 +34,13 @@
     width: 270px;
     height: 100px;
 }
+.img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Isso garante que as imagens sejam centralizadas verticalmente na página */
+}
+.search-bar {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior para separar a barra de pesquisa das imagens */
+}
