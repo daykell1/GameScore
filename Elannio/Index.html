@@ -6,20 +6,58 @@
     <title>GameScore+</title>
     <link href="styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <ul class="navbar">
         <li class="img"><a href="#"><img src="img/GameScore.png"></a></li>
-        <li class="BarraPesquisa"><form action="/pagina-de-resultados.html" method="GET">
-        <div class="barra-de-pesquisa">
-            <input type="text" name="q" placeholder="Search..." />
-            <span class="lupa"><i class="fas fa-search"></i></span>
-        </div>
-    </form>
-</li>
+        <li class="BarraPesquisa">
+            <form action="/pagina-de-resultados.html" method="GET">
+                <div class="barra-de-pesquisa">
+                    <input type="text" name="q" placeholder="Search..." autocomplete="off" />
+                    <span class="lupa"><i class="fas fa-search"></i></span>
+                </div>
+            </form>
+        </li>
         <li class="game"><a href="#">Game</a></li>
         <li class="sing-in"><a href="cadastro.html">Sing In </a></li>
     </ul>
-</div>
+    <ul class="navjogosfavoritos">
+        <!-- Sua barra de navegação aqui -->
+    </ul>
+    
+    <!-- Seção de Jogos Favoritos -->
+    <section class="jogos-favoritos">
+        <h2>Jogos Favoritos</h2>
+        <ul class="lista-jogos">
+            <li>
+                <img src="img/GameScore.png" alt="Jogo Favorito 1">
+                Jogo Favorito 1
+            </li>
+            <li>
+                <img src="img/GameScore.png" alt="Jogo Favorito 2">
+                Jogo Favorito 2
+            </li>
+            <li>
+                <img src="img/GameScore.png" alt="Jogo Favorito 3">
+                Jogo Favorito 3
+            </li>
+            <li>
+                <img src="img/GameScore.png" alt="Jogo Favorito 1">
+                Jogo Favorito 4
+            </li>
+            <li>
+                <img src="img/GameScore.png" alt="Jogo Favorito 2">
+                Jogo Favorito 5
+            </li>
+            <li>
+                <img src="img/GameScore.png" alt="Jogo Favorito 3">
+                Jogo Favorito 6
+            </li>
+            <!-- Adicione mais jogos conforme necessário -->
+        </ul>
+    </section>
+    
 </body>
 </html>
