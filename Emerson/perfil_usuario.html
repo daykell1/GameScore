@@ -10,9 +10,30 @@
 <body id="principal">
     <div>
         <div id="menu"> <!-- Correção: utilize a sintaxe 'class' -->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit">Buscar</button>
+            </div>
             <a href="GAMESCORE/Elannio/index.html">Home</a>
             <a href="perfil_usuario.html">Perfil</a>
             <a href="#">Gamen</a>
+           
+        </div>
+        <div class="forma">
+            <h1 class="formato_texto">Foto do perfil</h1>
+            <form action="processar_upload.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="foto" accept="image/*">
+                <input type="image" src="perfioadd.png" alt="Botão de imagem" width="100" height="100">
+            </form>
+        </div>
+        
+        <div class="img-center">
+            <a href="outra_pagina.html">
+                <img src="Favoritos.png" alt="Texto alternativo" width="300" height="300">
+            </a>
+            <a href="outra_pagina.html">
+                <img src="review.png" alt="Texto alternativo" width="300" height="300">
+            </a>
         </div>
     </div>
 </body>

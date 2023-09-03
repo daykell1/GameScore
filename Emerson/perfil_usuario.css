@@ -1,0 +1,46 @@
+#principal {
+    background: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background: black;
+    padding: 10px;
+    display: flex; /* Utilize flexbox para alinhar os itens à direita */
+    justify-content: flex-end;
+}
+
+#menu a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px; /* Adicione margem para espaçamento entre os links */
+}
+
+/* Estilize o link quando passar o mouse por cima */
+#menu a:hover {
+    text-decoration: underline;
+}
+.formato_texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif  15px;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px; /* Adicione margem para espaçamento entre os links */
+}
+.forma{
+    background:  #483C32;
+    padding: 10px;
+    width: 270px;
+    height: 100px;
+}
+.img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Isso garante que as imagens sejam centralizadas verticalmente na página */
+}
+.search-bar {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior para separar a barra de pesquisa das imagens */
+}
