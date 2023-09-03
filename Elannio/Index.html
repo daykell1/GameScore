@@ -7,7 +7,6 @@
     <link href="styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <ul class="navbar">
@@ -21,43 +20,50 @@
             </form>
         </li>
         <li class="game"><a href="#">Game</a></li>
-        <li class="sing-in"><a href="cadastro.html">Sing In </a></li>
+        <li class="sing-in"><a href="cadastro.html">Sing In</a></li>
+    </ul>
+    <div class="carrossel">
+        <span class="carousel-prev">❮</span>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="img/capamario.png.webp" alt="Banner 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="img/GameScore1.png" alt="Banner 2">
+            </div>
+            <!-- Adicione mais banners conforme necessário -->
+        </div>
+        <span class="carousel-next">❯</span>
+    </div>
+    
+    <ul class="categoria">
+        <li>
+            <select id="Categorias">
+                <option value="Ação">Categoria</option>
+                <option value="3d">Ação</option>
+                <option value="Ação">3d</option>
+                <option value="3d">2d</option>
+                <option value="Ação">nintendo</option>
+                <option value="3d">playstation</option>
+            </select>
+            <script src="jogosfavoritos.js"></script>
+        </li>
     </ul>
     <ul class="navjogosfavoritos">
-        <!-- Sua barra de navegação aqui -->
     </ul>
-    
-    <!-- Seção de Jogos Favoritos -->
     <section class="jogos-favoritos">
-        <h2>Jogos Favoritos</h2>
-        <ul class="lista-jogos">
-            <li>
-                <img src="img/GameScore.png" alt="Jogo Favorito 1">
-                Jogo Favorito 1
-            </li>
-            <li>
-                <img src="img/GameScore.png" alt="Jogo Favorito 2">
-                Jogo Favorito 2
-            </li>
-            <li>
-                <img src="img/GameScore.png" alt="Jogo Favorito 3">
-                Jogo Favorito 3
-            </li>
-            <li>
-                <img src="img/GameScore.png" alt="Jogo Favorito 1">
-                Jogo Favorito 4
-            </li>
-            <li>
-                <img src="img/GameScore.png" alt="Jogo Favorito 2">
-                Jogo Favorito 5
-            </li>
-            <li>
-                <img src="img/GameScore.png" alt="Jogo Favorito 3">
-                Jogo Favorito 6
-            </li>
-            <!-- Adicione mais jogos conforme necessário -->
+        <h2>Jogos Favoritos Da Semana</h2>
+        <ul class="lista-jogos" id="jogos-favoritos">
+            <!-- Os jogos favoritos serão preenchidos aqui com JavaScript -->
         </ul>
     </section>
-    
+        <ul class="navjogosfavoritos">
+    </ul>
+    <section class="jogos-curtidos">
+        <h2>Jogos Mais Curtidos Da Semana</h2>
+        <ul class="lista-jogos" id="jogos-favoritos">
+            <!-- Os jogos favoritos serão preenchidos aqui com JavaScript -->
+        </ul>
+    </section>
 </body>
 </html>
