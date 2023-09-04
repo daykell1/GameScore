@@ -85,15 +85,23 @@ body {
     margin-right: 150px;
 }
 
+.navjogosfavoritos{
+    margin-top: -420px;
+}
+
+.jogos-curtidos{
+    margin-top: 480px;
+}
+
 .jogos-favoritos h2 {
-    margin-top: 60px;
+    margin-top: -100px; /* Reduza a margem superior para posicionar a seção mais para cima */
     color: #ddd;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
     margin-left: 320px;
-    border-bottom: 2px solid #ddd; /* Adicione uma linha de 2px de espessura e cor preta embaixo do h2 */
-    display: inline-block; /* Isso ajuda a limitar a largura da linha ao texto */
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
     padding-bottom: 5px;
     width: 600px;
 }
@@ -108,18 +116,19 @@ body {
 .jogos-favoritos .lista-jogos li {
     display: inline-block;
     font-size: 20px;
-    margin-right: 200px; 
-    text-align: center; 
+    margin-right: 200px;
+    text-align: center;
     margin-left: 300px;
 }
 
 /* Estilos para as imagens */
 .jogos-favoritos .lista-jogos li img {
-    display: block; 
-    max-width: 200px; 
-    height: auto; 
-    margin-bottom: 5px; 
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 5px;
 }
+
 
 #botaoEscolha {
     padding: 9px;
@@ -147,7 +156,7 @@ body {
     border-radius: 10px; /* Cantos arredondados */
     background-color: #fff; /* Cor de fundo da caixa de seleção */
     outline: none;
-    margin-left: -165px;
+    margin-left: -350px;
 }
 
 /* Estilo para a seta da caixa de seleção (indicador) */
@@ -186,8 +195,6 @@ body {
 .carousel-container {
     display: flex;
     overflow: hidden;
-    width: 500px;
-    height: 250px;
     margin-bottom: -450px;
     margin-left: 550px;
     margin-top: -50px;
@@ -237,3 +244,200 @@ body {
     padding-bottom: 5px;
     width: 600px;
 }
+
+.banner-container {
+    width: 100%; /* Largura máxima do banner */
+    max-height: 400px; /* Altura máxima do banner (ajuste conforme necessário) */
+    overflow: hidden; /* Oculta o conteúdo que exceder os limites do banner */
+}
+
+.banner-container img {
+    width: 100%; /* A imagem se ajustará automaticamente à largura do banner */
+    height: auto; /* A altura se ajustará automaticamente para manter a proporção da imagem */
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #272424;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 300px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Alterado para espaço entre os elementos */
+    align-items: center; /* Centralizar verticalmente o conteúdo */
+}
+
+.footer-section {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Tornar as imagens flexíveis para alinhá-las horizontalmente */
+    justify-content: center; /* Centralizar as imagens horizontalmente */
+    align-items: center; 
+    margin-left: -700px;
+}
+
+ul.links-mid {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Tornar as imagens flexíveis para alinhá-las horizontalmente */
+    justify-content: center; /* Centralizar as imagens horizontalmente */
+    align-items: center;
+    /* Remova a propriedade margin-left para centralizar os links */
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul.links-mid li a {
+    color: #fff; /* Defina a cor dos links como branco */
+    text-decoration: none; /* Remova o sublinhado dos links */
+}
+
+
+ul a {
+    display: inline-block; /* Garantir que as imagens sejam exibidas em linha */
+    margin-right: 40px; /* Espaçamento entre as imagens */
+}
+
+.facebook {
+    width: 35px; /* Tamanho personalizado para o Facebook */
+    height: 35px; /* Tamanho personalizado para o Facebook */
+}
+
+/* Estilos para a imagem do Instagram */
+.instagram {
+    width: 30px; /* Tamanho personalizado para o Instagram */
+    height: 30px; /* Tamanho personalizado para o Instagram */
+}
+
+/* Estilos para a imagem do Twitter */
+.twitter {
+    width: 35px; /* Tamanho personalizado para o Twitter */
+    height: 30px; /* Tamanho personalizado para o Twitter */
+}
+
+/* Estilos para a imagem do TikTok */
+.tiktok {
+    width: 40px; /* Tamanho personalizado para o TikTok */
+    height: 40px; /* Tamanho personalizado para o TikTok */
+}
+
+/* Estilos para a footer-section name links */
+.footer-section.name.links {
+    flex: 1;
+    text-align: center;
+}
+
+
+/* Estilos para o container-autoral */
+.container-autoral {
+    text-align: center;
+}
+
+/* Estilos para o texto de autoria */
+.container-autoral p {
+    margin: 0;
+}
+
+/* Estilos para o link "Home" */
+.home-link {
+    color: #fff; /* Cor do texto igual à do container de direitos autorais */
+    text-decoration: none; /* Remova o sublinhado dos links */
+    font-family: 'Lato', sans-serif; /* Use a mesma fonte que o container de direitos autorais */
+    margin-left: 0px; /* Espaçamento igual ao do container de direitos autorais */
+}
+
+/* Estilos para o link "Sign In" */
+.social-link1 {
+    color: #fff; /* Cor do texto igual à do container de direitos autorais */
+    text-decoration: none; /* Remova o sublinhado dos links */
+    font-family: 'Lato', sans-serif; /* Use a mesma fonte que o container de direitos autorais */
+    margin-left: -12px; /* Espaçamento igual ao dos outros links do container */
+}
+
+.social-link2 {
+    color: #fff; /* Cor do texto igual à do container de direitos autorais */
+    text-decoration: none; /* Remova o sublinhado dos links */
+    font-family: 'Lato', sans-serif; /* Use a mesma fonte que o container de direitos autorais */
+    margin-left: -3px; /* Espaçamento igual ao dos outros links do container */
+}
+
+.separator1{
+    margin-left: -30px;
+}
+
+.separator2{
+    margin-left: -20px;
+}
+
+        /* Estilo para a seção Crew Picks */
+        .crew-picks {
+            background-color: #6e6e6e;
+            padding: 20px;
+            border: 2px solid #ccc; /* Borda da caixa de seleção */
+            width: 250px;
+            margin-left: 970px;
+            margin-top: 15px;
+            height: 360px;
+        }
+
+        /* Estilo para o título */
+        .crew-picks h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para a lista de filmes */
+ /* Estilo para a lista de filmes (ul) */
+/* Estilo para a lista de filmes (ul) */
+.crew-picks ul {
+    list-style-type: none;
+    padding: 0;
+    display: block; /* Altere para "block" para exibir os filmes verticalmente */
+    overflow: hidden; /* Para lidar com overflow vertical */
+}
+
+/* Estilo para cada filme (li) */
+.crew-picks li {
+    margin-bottom: 10px; /* Espaço entre os filmes */
+    width: auto; /* Largura automática */
+}
+
+/* Estilo para a imagem do filme */
+.crew-picks img {
+    width: 70px;
+    height: auto;
+    border: 2px solid #fff;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+
+
+        /* Estilo para o título do filme */
+        .crew-picks h3 {
+            text-align: center;
+            font-size: 10px;
+            margin-top: 0px;
+            margin-left: 560px;
+        }
+        .crew-picks p {
+            text-align: center;
+            font-size: 10px;
+            margin-top: -75px;
+            margin-left: 750px;
+        }
