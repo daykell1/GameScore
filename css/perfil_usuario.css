@@ -1,0 +1,229 @@
+#principal {
+    background: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+ ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D12;
+    overflow: hidden;
+    display: flex; /*Usando flexbox para alinhar os itens horizontalmente */
+    justify-content: center; /* Centralizar horizontalmente os itens */
+    align-items: center; /* Centralizar verticalmente os itens */
+    width: 100%;
+    height: 70px;
+}
+
+/* Estilizar os links com a fonte "Open Sans Extra Bold" */
+li.game a, li.sing-in a  {
+    display: block;
+    color: #ddd;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif; /* Aplicar a fonte "Lato" */
+    font-weight: 800; /* Espessura "Extra Bold" se desejado */
+}
+
+
+/* Estilos para os links quando o mouse está sobre eles */
+li.nav-item a:hover {
+    background-color: #ddd;
+    color: #0D0D12;
+    width: 100%;
+    text-align: right;
+}
+
+body {
+    background-color: #35343D;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Estilo para a barra de pesquisa */
+.barra-de-pesquisa {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding: 9px;
+    background-color: white; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    margin-left: -150px;
+    margin-right: 25px;
+}
+
+.barra-de-pesquisa input[type="text"]:focus {
+    outline: none;
+}
+
+.barra-de-pesquisa input {
+    flex: 1; /* Expande a entrada para ocupar o espaço restante */
+    border: none; /* Remove a borda da entrada de texto */
+    background: none; /* Remove o fundo da entrada de texto */
+}
+
+/* Estilo para o ícone da lupa */
+.lupa {
+    margin-right: 10px;
+    font-size: inherit;
+    color: #555;
+    cursor: pointer;
+}
+
+.img img {
+    width: 150px;
+    height: auto;
+    margin-right: 150px;
+}
+.forma{
+    background:  #483C32;
+    padding: 10px;
+    width: 270px;
+    height: 100px;
+}
+.img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Isso garante que as imagens sejam centralizadas verticalmente na página */
+}
+.search-bar {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior para separar a barra de pesquisa das imagens */
+}
+footer {
+    background-color: #272424;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 300px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    line-height: 18px
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Alterado para espaço entre os elementos */
+    align-items: center; /* Centralizar verticalmente o conteúdo */
+}
+
+.footer-section {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Tornar as imagens flexíveis para alinhá-las horizontalmente */
+    justify-content: center; /* Centralizar as imagens horizontalmente */
+    align-items: center; 
+    margin-left: -700px;
+}
+
+ul.links-mid {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Tornar as imagens flexíveis para alinhá-las horizontalmente */
+    justify-content: center; /* Centralizar as imagens horizontalmente */
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+ul.links-mid li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ul a {
+    display: inline-block;
+    margin-right: 40px; /* Espaçamento entre as imagens */
+}
+
+.facebook {
+    width: 25px;
+    height: auto;
+}
+
+.instagram {
+    width: 20px;
+    height: auto;
+}
+
+.twitter {
+    width: 25px;
+    height: auto;
+}
+
+.tiktok {
+    width: 25px;
+    height: auto;
+}
+
+.footer-section.name.links {
+    flex: 1;
+    text-align: center;
+}
+
+.container-autoral {
+    text-align: center;
+}
+
+.container-autoral p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.home-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    margin-left: 0px;
+}
+
+.social-link1 {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif; 
+    margin-left: -12px; 
+}
+
+.social-link2 {
+    color: #fff;
+    text-decoration: none; /* Remova o sublinhado dos links */
+    font-family: 'Lato', sans-serif; 
+    margin-left: -3px;
+}
+
+.separator1{
+    margin-left: -30px;
+}
+
+.separator2{
+    margin-left: -20px;
+}
+.upload-button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

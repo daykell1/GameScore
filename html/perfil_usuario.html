@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="../css/perfil_usuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body id="principal">
+    <div>
+        <ul class="navbar">
+            <li class="img"><a href="#"><img src="../img/GameScore.png"></a></li>
+            <li class="BarraPesquisa">
+                <form action="/pagina-de-resultados.html" method="GET">
+                    <div class="barra-de-pesquisa">
+                        <input type="text" name="q" placeholder="Search..." autocomplete="off" />
+                        <span class="lupa"><i class="fas fa-search"></i></span>
+                    </div>
+                </form>
+            </li>
+            <li class="game"><a href="index.html">Home</a></li>
+        </ul>
+       
+       <div>
+        <input type="file" id="imagemInput" style="display: none;">
+        
+        <label for="imagemInput" id="uploadBotao" class="upload-button" onclick="selecionarImagem()">
+            <i class="fas fa-upload"></i> Carregar Imagem
+        </label>
+        
+        <br>
+        <img id="imagemExibida" src="" alt="Imagem Carregada" style="display: none; max-width: 100%; max-height: 200px;">
+    
+        <script>
+            function selecionarImagem() {
+                const imagemInput = document.getElementById('imagemInput');
+                const imagemExibida = document.getElementById('imagemExibida');
+    
+                imagemInput.addEventListener('change', function () {
+                    const arquivo = imagemInput.files[0];
+    
+                    if (arquivo) {
+                        const leitor = new FileReader();
+    
+                        leitor.onload = function (e) {
+                            imagemExibida.src = e.target.result;
+                            imagemExibida.style.display = 'block';
+                        };
+    
+                        leitor.readAsDataURL(arquivo);
+                    }
+                });
+            }
+        </script>
+       </div>
+        
+        <div class="img-center">
+            <a href="outra_pagina.html">
+                <img src="../img/Favorito.png" alt="Texto alternativo" width="300" height="300">
+            </a>
+            <a href="outra_pagina.html">
+                <img src="../img/review.png" alt="Texto alternativo" width="300" height="300">
+                
+            </a>
+        </div>
+        
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                    </div>
+                    <div class="footer-section links">
+                        <ul>
+                            <li><a href="/" class="social-link1">Home</a></li>
+                            <li><span class="separator1">|</span></li>
+                            <li><a href="/" class="social-link"><img src="../img/facebook.png" alt="Facebook" class="facebook"></a></li>
+                            <li><a href="/" class="social-link"><img src="../img/instagram.png" alt="Instagram" class="instagram"></a></li>
+                            <li><a href="/" class="social-link"><img src="../img/twitter.png" alt="Twitter" class="twitter"></a></li>
+                            <li><a href="/" class="social-link"><img src="../img/tiktok.png" alt="TikTok" class="tiktok"></a></li>
+                            <li><span class="separator2">|</span></li>
+                            <li><a href="/" class="social-link2">Sign In</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section name links">
+                    <ul class="links-mid">
+                        <li><a href="/" class="social-link">About</a></li>
+                        <li><a href="/" class="social-link">Help</a></li>
+                        <li><a href="/" class="social-link">Terms</a></li>
+                        <li><a href="/" class="social-link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="container-autoral">
+                    <p>&copy; 2023 by GameScore.com, all rights reserved.</p>
+                </div>
+            </div> 
+        </footer>
+    </div>
+</body>
+</html>
