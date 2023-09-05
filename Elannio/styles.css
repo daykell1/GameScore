@@ -79,9 +79,8 @@ body {
 }
 
 .img img {
-    width: 200px;
+    width: 150px;
     height: auto;
-    margin-bottom: 14px;
     margin-right: 150px;
 }
 
@@ -90,7 +89,7 @@ body {
 }
 
 .jogos-curtidos{
-    margin-top: 840px;
+    margin-top: 550px;
 }
 
 .jogos-favoritos h2 {
@@ -107,7 +106,7 @@ body {
 }
 
 .jogos-negativos h2 {
-    margin-top: 1146px; /* Reduza a margem superior para posicionar a seção mais para cima */
+    margin-top: 860px; /* Reduza a margem superior para posicionar a seção mais para cima */
     color: #ddd;
     font-size: 20px;
     margin-bottom: 10px;
@@ -247,7 +246,7 @@ body {
 .carousel-prev {
     left: 0; /* Colocar à esquerda */
     margin-top: 115px;
-    margin-left: 304px;
+    margin-left: 303px;
 }
 
 /* Estilo para a seta à direita */
@@ -266,6 +265,7 @@ body {
 .banner-container img {
     max-width: 910px; /* A imagem se ajustará automaticamente à largura do banner */
     max-height: 100%;
+    object-fit: cover;
     margin-top: 10px;
     margin-left: 18px; /* A altura se ajustará automaticamente para manter a proporção da imagem */
 }
@@ -295,6 +295,7 @@ footer {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    line-height: 18px
 }
 
 .footer-content {
@@ -326,6 +327,7 @@ ul.links-mid {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 ul.links-mid li a {
@@ -340,23 +342,23 @@ ul a {
 }
 
 .facebook {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: auto;
 }
 
 .instagram {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: auto;
 }
 
 .twitter {
-    width: 35px;
-    height: 30px;
+    width: 25px;
+    height: auto;
 }
 
 .tiktok {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: auto;
 }
 
 .footer-section.name.links {
@@ -370,6 +372,7 @@ ul a {
 
 .container-autoral p {
     margin: 0;
+    font-size: 15px;
 }
 
 .home-link {
@@ -403,9 +406,8 @@ ul a {
 
         /* Estilo para a seção Crew Picks */
         .crew-picks {
-            background-color: #6e6e6e;
+            background-color: #9f9f9f;
             padding: 20px;
-            border: 2px solid #ccc; /* Borda da caixa de seleção */
             width: 250px;
             margin-left: 970px;
             margin-top: 55px;
@@ -413,9 +415,8 @@ ul a {
         }
 
         .crew-picks2 {
-            background-color: #6e6e6e;
+            background-color: #9f9f9f;
             padding: 20px;
-            border: 2px solid #ccc; /* Borda da caixa de seleção */
             width: 250px;
             margin-left: 970px;
             margin-top: 55px;
@@ -448,7 +449,8 @@ ul a {
 /* Estilo para a imagem do filme */
 .crew-picks img {
     width: 70px;
-    height: auto;
+    height: 70px;
+    object-fit: cover;
     border: 2px solid #fff;
     margin-left: 700px;
     margin-top: 10px;
@@ -494,7 +496,8 @@ ul a {
 /* Estilo para a imagem do filme */
 .crew-picks2 img {
     width: 70px;
-    height: auto;
+    height: 70px;
+    object-fit: cover;
     border: 2px solid #fff;
     margin-left: 700px;
     margin-top: 10px;
@@ -519,3 +522,109 @@ ul a {
             text-align: center;
             margin-bottom: 10px;
         }
+
+/* Estilo geral da seção ESCOLHA DE JOGOS */
+.escolha-de-jogos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -276px;
+}
+
+/* Estilo dos itens */
+.jogo {
+    width: calc(8.6% - 5px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilo das imagens */
+.jogo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo dos títulos e descrições */
+.jogo h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.jogo p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Estilo geral da seção ESCOLHA DE JOGOS */
+.escolha-de-jogos-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -276px;
+}
+
+/* Estilo dos itens */
+.jogo-escolhido-2 {
+    width: calc(8.6% - 5px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilo das imagens */
+.jogo-escolhido-2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo dos títulos e descrições */
+.jogo-escolhido-2 h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.jogo-escolhido-2 p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Estilo geral da seção ESCOLHA DE JOGOS */
+.escolha-de-jogos-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -276px;
+}
+
+/* Estilo dos itens */
+.jogo-escolhido-3 {
+    width: calc(8.6% - 5px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilo das imagens */
+.jogo-escolhido-3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo dos títulos e descrições */
+.jogo-escolhido-3 h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.jogo-escolhido-3 p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
