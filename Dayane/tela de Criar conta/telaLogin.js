@@ -19,5 +19,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-

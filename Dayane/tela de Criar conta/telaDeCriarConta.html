@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="telaDeCriarConta.css">
     <title>Create Account GameScore</title>
 </head>
 <body>
     <div class="create-account-container">
         <div class="create-account-title">CREATE AN ACCOUNT</div>
-        <input type="text" class="login-input" placeholder="Username (min 6 e max 10 characters)">
+        <input type="text" class="login-input" placeholder="Username (min 6 and max 10 characters)">
         <input type="text" class="login-input" placeholder="Email">
         <input type="password" class="login-input" placeholder="Password">
         
@@ -24,11 +24,22 @@
         </div>
         
         <div class="robot-box">
-            <div class="robot-icon">🤖</div>
-            <div class="robot-text">I am not a robot</div>
-        </div>
         
-        <button class="create-button">CREATE</button>
+            <div class="robot-text"></div>
+            <div class="captcha-container">
+                <div class="captcha-text" id="captchaText"></div>
+                <input type="text" id="userInput" placeholder="Enter the Code">
+                <button onclick="validateCaptcha()">Check</button>
+            </div>
+            <div class="message" id="message"></div>
+        
+            <script src="telaDeCriarConta.css"></script>
+
+        <script src="telaDeCriarConta.js"></script>
+        
+        <button class="create-button" id="createButton">Create</button>
+
+        <script src="telaDeCriarConta.js"></script>
         
         <div class="final-text">By creating an account, you agree to our Terms of Use and acknowledge the data practices in our Privacy Policy.</div>
     </div>
