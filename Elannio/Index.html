@@ -22,21 +22,29 @@
         <li class="game"><a href="#">Game</a></li>
         <li class="sing-in"><a href="cadastro.html">Sing In</a></li>
     </ul>
-    <div class="carrossel">
+    <div class="carrossel" id="carousel">
         <span class="carousel-prev">❮</span>
         <div class="banner-container">
             <div class="carousel-container">
                 <div class="carousel-slide">
-                    <img src="img/GameScore.png" alt="Banner 1">
+                    <img src="img/super.webp" alt="Banner 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/sonic.webp" alt="Banner 2">
                 </div>
                 <div class="carousel-slide">
                     <img src="img/GameScore.png" alt="Banner 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/GameScore1.png" alt="Banner 2">
                 </div>
                 <!-- Adicione mais banners conforme necessário -->
             </div>
         </div>
         <span class="carousel-next">❯</span>
     </div>
+    
+    <script src="carrossel.js"></script>
     
     <ul class="categoria">
         <li>
@@ -52,6 +60,39 @@
         </li>
     </ul>
     <section class="crew-picks">
+        <h2>Lançamentos</h2>
+        <ul>
+            <li>
+                <figure>
+                    <img src="img/GameScore.png" alt="jogo1">
+                    <figcaption>
+                        <h3>Jogo 1</h3>
+                        <p>Descrição do Jogo 1.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/GameScore.png" alt="jogo2">
+                    <figcaption>
+                        <h3>Jogo 2</h3>
+                        <p>Descrição do Jogo 2.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/GameScore.png" alt="jogo3">
+                    <figcaption>
+                        <h3>Jogo 3</h3>
+                        <p>Descrição do Jogo 3.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <!-- Adicione mais jogos com descrições conforme necessário -->
+        </ul>
+    </section>
+    <section class="crew-picks2">
         <h2>Recomendados</h2>
         <ul>
             <li>
@@ -84,7 +125,6 @@
             <!-- Adicione mais jogos com descrições conforme necessário -->
         </ul>
     </section>
-    
     <ul class="navjogosfavoritos">
     </ul>
     <section class="jogos-favoritos">
@@ -101,6 +141,14 @@
             <!-- Os jogos favoritos serão preenchidos aqui com JavaScript -->
         </ul>
     </section>
+    <ul class="navjogosfavoritos">
+    </ul>
+    <section class="jogos-negativos">
+        <h2>Jogos Com Piores Avaliações</h2>
+        <ul class="lista-jogos" id="jogos-favoritos">
+            <!-- Os jogos favoritos serão preenchidos aqui com JavaScript -->
+        </ul>
+    </section>
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -110,10 +158,10 @@
                     <ul>
                         <li><a href="/" class="social-link1">Home</a></li>
                         <li><span class="separator1">|</span></li>
-                        <li><a href="/" class="social-link"><img src="img/facebook.png" alt="Facebook" class="facebook"></a></li>
-                        <li><a href="/" class="social-link"><img src="img/instagram.png" alt="Instagram" class="instagram"></a></li>
-                        <li><a href="/" class="social-link"><img src="img/twitter.png" alt="Twitter" class="twitter"></a></li>
-                        <li><a href="/" class="social-link"><img src="img/tiktok.png" alt="TikTok" class="tiktok"></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61551002249207" class="social-link"><img src="img/facebook.png" alt="Facebook" class="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/gameescore/" class="social-link"><img src="img/instagram.png" alt="Instagram" class="instagram"></a></li>
+                        <li><a href="https://twitter.com/GameScoree" class="social-link"><img src="img/twitter.png" alt="Twitter" class="twitter"></a></li>
+                        <li><a href="https://www.tiktok.com/@gamescoreee?lang=pt-BR" class="social-link"><img src="img/tiktok.png" alt="TikTok" class="tiktok"></a></li>
                         <li><span class="separator2">|</span></li>
                         <li><a href="/" class="social-link2">Sign In</a></li>
 
@@ -133,6 +181,5 @@
             </div>
         </div> 
     </footer>
-    
 </body>
 </html>

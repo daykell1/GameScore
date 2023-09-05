@@ -86,15 +86,28 @@ body {
 }
 
 .navjogosfavoritos{
-    margin-top: -420px;
+    margin-top: -797px;
 }
 
 .jogos-curtidos{
-    margin-top: 480px;
+    margin-top: 840px;
 }
 
 .jogos-favoritos h2 {
     margin-top: -100px; /* Reduza a margem superior para posicionar a seção mais para cima */
+    color: #ddd;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 320px;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 600px;
+}
+
+.jogos-negativos h2 {
+    margin-top: 1146px; /* Reduza a margem superior para posicionar a seção mais para cima */
     color: #ddd;
     font-size: 20px;
     margin-bottom: 10px;
@@ -144,7 +157,7 @@ body {
 }
 
 .categoria{
-    margin-top: 430px;
+    margin-top: 250px;
     margin-left: 1120px;
 }
 
@@ -195,9 +208,7 @@ body {
 .carousel-container {
     display: flex;
     overflow: hidden;
-    margin-bottom: -450px;
-    margin-left: 550px;
-    margin-top: -50px;
+    margin-bottom: 20px; /* Espaço entre os slides */
 }
 
 /* Estilo para cada slide do carrossel */
@@ -208,29 +219,57 @@ body {
 
 /* Estilo para as setas de navegação */
 .carousel-prev, .carousel-next {
-    font-size: 24px; /* Tamanho do ícone de seta */
+    font-size: 24px;
     cursor: pointer;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
-    color: white; /* Cor do ícone */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     position: absolute;
-    top: 50%; /* Centralizar verticalmente */
+    top: 50%;
     transform: translateY(-50%);
-    transition: background-color 0.3s ease; /* Transição de cor de fundo */
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 200px;
+    transition: background-color 0.3s ease;
+    outline: none;
+    border: none;
+    margin: 305px; /* Adicione margem para ajustar o espaçamento nas bordas */
+}
+
+/* Efeito de hover para os botões */
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Altere a cor de fundo ao passar o mouse */
+}
+
+/* Efeito de clique para os botões */
+.carousel-prev:active, .carousel-next:active {
+    transform: translateY(-50%) scale(0.95); /* Reduza o tamanho e desloque ao clicar */
 }
 
 /* Estilo para a seta à esquerda */
 .carousel-prev {
     left: 0; /* Colocar à esquerda */
+    margin-top: 115px;
+    margin-left: 304px;
 }
 
 /* Estilo para a seta à direita */
 .carousel-next {
     right: 0; /* Colocar à direita */
+    margin-top: 115px;
 }
+
+.banner-container {
+    max-height: 300px; /* Altura máxima menor do banner */
+    margin-left: auto; /* Margem à esquerda automática */
+    margin-right: auto; /* Margem à direita automática */
+    text-align: center; /* Centralizar horizontalmente o conteúdo */
+}
+
+.banner-container img {
+    max-width: 910px; /* A imagem se ajustará automaticamente à largura do banner */
+    max-height: 100%;
+    margin-top: 10px;
+    margin-left: 18px; /* A altura se ajustará automaticamente para manter a proporção da imagem */
+}
+
 
 .jogos-curtidos h2 {
     margin-top: 300px;
@@ -245,18 +284,6 @@ body {
     width: 600px;
 }
 
-.banner-container {
-    width: 100%; /* Largura máxima do banner */
-    max-height: 400px; /* Altura máxima do banner (ajuste conforme necessário) */
-    overflow: hidden; /* Oculta o conteúdo que exceder os limites do banner */
-}
-
-.banner-container img {
-    width: 100%; /* A imagem se ajustará automaticamente à largura do banner */
-    height: auto; /* A altura se ajustará automaticamente para manter a proporção da imagem */
-}
-
-/* Estilos para o footer */
 footer {
     background-color: #272424;
     color: #fff;
@@ -295,7 +322,6 @@ ul.links-mid {
     display: flex; /* Tornar as imagens flexíveis para alinhá-las horizontalmente */
     justify-content: center; /* Centralizar as imagens horizontalmente */
     align-items: center;
-    /* Remova a propriedade margin-left para centralizar os links */
     font-family: 'Lato', sans-serif;
     margin-left: 20px;
     margin-top: 10px;
@@ -303,77 +329,68 @@ ul.links-mid {
 }
 
 ul.links-mid li a {
-    color: #fff; /* Defina a cor dos links como branco */
-    text-decoration: none; /* Remova o sublinhado dos links */
+    color: #fff;
+    text-decoration: none;
 }
 
 
 ul a {
-    display: inline-block; /* Garantir que as imagens sejam exibidas em linha */
+    display: inline-block;
     margin-right: 40px; /* Espaçamento entre as imagens */
 }
 
 .facebook {
-    width: 35px; /* Tamanho personalizado para o Facebook */
-    height: 35px; /* Tamanho personalizado para o Facebook */
+    width: 35px;
+    height: 35px;
 }
 
-/* Estilos para a imagem do Instagram */
 .instagram {
-    width: 30px; /* Tamanho personalizado para o Instagram */
-    height: 30px; /* Tamanho personalizado para o Instagram */
+    width: 30px;
+    height: 30px;
 }
 
-/* Estilos para a imagem do Twitter */
 .twitter {
-    width: 35px; /* Tamanho personalizado para o Twitter */
-    height: 30px; /* Tamanho personalizado para o Twitter */
+    width: 35px;
+    height: 30px;
 }
 
-/* Estilos para a imagem do TikTok */
 .tiktok {
-    width: 40px; /* Tamanho personalizado para o TikTok */
-    height: 40px; /* Tamanho personalizado para o TikTok */
+    width: 40px;
+    height: 40px;
 }
 
-/* Estilos para a footer-section name links */
 .footer-section.name.links {
     flex: 1;
     text-align: center;
 }
 
-
-/* Estilos para o container-autoral */
 .container-autoral {
     text-align: center;
 }
 
-/* Estilos para o texto de autoria */
 .container-autoral p {
     margin: 0;
 }
 
-/* Estilos para o link "Home" */
 .home-link {
-    color: #fff; /* Cor do texto igual à do container de direitos autorais */
-    text-decoration: none; /* Remova o sublinhado dos links */
-    font-family: 'Lato', sans-serif; /* Use a mesma fonte que o container de direitos autorais */
-    margin-left: 0px; /* Espaçamento igual ao do container de direitos autorais */
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    margin-left: 0px;
 }
 
-/* Estilos para o link "Sign In" */
 .social-link1 {
-    color: #fff; /* Cor do texto igual à do container de direitos autorais */
-    text-decoration: none; /* Remova o sublinhado dos links */
-    font-family: 'Lato', sans-serif; /* Use a mesma fonte que o container de direitos autorais */
-    margin-left: -12px; /* Espaçamento igual ao dos outros links do container */
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif; 
+    margin-left: -12px; 
 }
 
 .social-link2 {
-    color: #fff; /* Cor do texto igual à do container de direitos autorais */
+    color: #fff;
     text-decoration: none; /* Remova o sublinhado dos links */
-    font-family: 'Lato', sans-serif; /* Use a mesma fonte que o container de direitos autorais */
-    margin-left: -3px; /* Espaçamento igual ao dos outros links do container */
+    font-family: 'Lato', sans-serif; 
+    margin-left: -3px;
 }
 
 .separator1{
@@ -391,7 +408,17 @@ ul a {
             border: 2px solid #ccc; /* Borda da caixa de seleção */
             width: 250px;
             margin-left: 970px;
-            margin-top: 15px;
+            margin-top: 55px;
+            height: 360px;
+        }
+
+        .crew-picks2 {
+            background-color: #6e6e6e;
+            padding: 20px;
+            border: 2px solid #ccc; /* Borda da caixa de seleção */
+            width: 250px;
+            margin-left: 970px;
+            margin-top: 55px;
             height: 360px;
         }
 
@@ -440,4 +467,55 @@ ul a {
             font-size: 10px;
             margin-top: -75px;
             margin-left: 750px;
+        }
+
+        .crew-picks h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para a lista de filmes */
+ /* Estilo para a lista de filmes (ul) */
+/* Estilo para a lista de filmes (ul) */
+.crew-picks2 ul {
+    list-style-type: none;
+    padding: 0;
+    display: block; /* Altere para "block" para exibir os filmes verticalmente */
+    overflow: hidden; /* Para lidar com overflow vertical */
+}
+
+/* Estilo para cada filme (li) */
+.crew-picks2 li {
+    margin-bottom: 10px; /* Espaço entre os filmes */
+    width: auto; /* Largura automática */
+}
+
+/* Estilo para a imagem do filme */
+.crew-picks2 img {
+    width: 70px;
+    height: auto;
+    border: 2px solid #fff;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+
+
+        /* Estilo para o título do filme */
+        .crew-picks2 h3 {
+            text-align: center;
+            font-size: 10px;
+            margin-top: 0px;
+            margin-left: 560px;
+        }
+        .crew-picks2 p {
+            text-align: center;
+            font-size: 10px;
+            margin-top: -75px;
+            margin-left: 750px;
+        }
+        .crew-picks2 h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
         }
