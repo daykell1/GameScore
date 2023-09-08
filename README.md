@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://github.com/daykell1/GameScore/assets/54118755/625437b1-4cad-4680-9ce2-273bb62be245" alt="Descrição da Imagem" width="250">
+  <img src="https://github.com/daykell1/GameScore/raw/main/assets/54118755/4021255e-b6a6-46a0-96d2-2e2e8cea57fd.png" alt="Descrição da Imagem" width="250">
 </p>
+
 
 
 
