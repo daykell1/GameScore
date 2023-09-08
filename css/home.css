@@ -94,7 +94,7 @@ body {
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    margin-left: 320px;
+    margin-left: 300px;
     border-bottom: 2px solid #ddd;
     display: inline-block;
     padding-bottom: 5px;
@@ -107,7 +107,7 @@ body {
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    margin-left: 320px;
+    margin-left: 300px;
     border-bottom: 2px solid #ddd;
     display: inline-block;
     padding-bottom: 5px;
@@ -151,7 +151,7 @@ body {
 
 .categoria{
     margin-top: 250px;
-    margin-left: 1120px;
+    margin-left: 1091px;
 }
 
 .categoria select {
@@ -246,10 +246,10 @@ body {
 }
 
 .banner-container img {
-    max-width: 910px;
+    max-width: 891px;
     max-height: 100%;
     object-fit: cover;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 18px;
 }
 
@@ -259,7 +259,7 @@ body {
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    margin-left: 320px;
+    margin-left: 300px;
     border-bottom: 2px solid #ddd; 
     display: inline-block;
     padding-bottom: 5px;
@@ -391,7 +391,7 @@ ul a {
     background-color: #9f9f9f;
     padding: 20px;
     width: 250px;
-    margin-left: 970px;
+    margin-left: 945px;
     margin-top: 55px;
     height: 360px;
 }
@@ -400,7 +400,7 @@ ul a {
     background-color: #9f9f9f;
     padding: 20px;
     width: 250px;
-    margin-left: 970px;
+    margin-left: 945px;
     margin-top: 55px;
     height: 360px;
 }
@@ -501,7 +501,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -276px;
+    margin-left: -295px;
 }
 
 .jogo {
@@ -532,7 +532,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -276px;
+    margin-left: -295px;
 }
 
 .jogo-escolhido-2 {
@@ -563,7 +563,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -276px;
+    margin-left: -295px;
 }
 
 .jogo-escolhido-3 {
