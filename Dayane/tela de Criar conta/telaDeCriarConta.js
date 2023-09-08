@@ -75,3 +75,19 @@ function validateCaptcha() {
 
 // Inicialize exibindo o captcha quando a página carregar
 displayCaptcha();
+
+
+
+// Função para entrada do botão CREATE
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Captura o botão pelo ID
+    const button = document.getElementById("myButton");
+
+    // Adiciona um evento de clique ao botão
+    button.addEventListener("click", function() {
+        // Coloque a ação que deseja realizar aqui
+        alert("Botão clicado! Execute sua ação em JavaScript aqui.");
+    });
+});

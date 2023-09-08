@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://github.com/daykell1/GameScore/assets/54118755/18fad7b0-63a0-4748-a687-fc9789a295dc" alt="Logo do GameScore+" width="250">
+  <img src="https://github.com/daykell1/GameScore/assets/54118755/625437b1-4cad-4680-9ce2-273bb62be245" alt="Descrição da Imagem" width="250">
 </p>
+
 
 
 

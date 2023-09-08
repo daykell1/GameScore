@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/telaDeCriarConta.css">
+    <title>Create Account GameScore</title>
+</head>
+<body>
+    <div class="create-account-container">
+        <div class="create-account-title">CREATE AN ACCOUNT</div>
+        <input type="text" class="login-input" placeholder="Username (min 6 and max 10 characters)">
+        <input type="text" class="login-input" placeholder="Email">
+        <input type="password" class="login-input" placeholder="Password">
+        
+        <div class="terms-container">
+            <input type="checkbox" class="agree-checkbox" id="termsCheckbox">
+            <div class="terms-text">I'm at least 16 years old and accept the Terms of Use.</div>
+        </div>
+        
+        <div class="terms-container">
+            <input type="checkbox" class="agree-checkbox" id="privacyCheckbox">
+            <div class="terms-text">I accept the Privacy Policy and consent to the processing of my personal information in accordance with it.</div>
+        </div>
+        
+        <div class="robot-box">
+        
+            <div class="robot-text"></div>
+            <div class="captcha-container">
+                <div class="captcha-text" id="captchaText"></div>
+                <input type="text" id="userInput" placeholder="Enter the Code">
+                <button onclick="validateCaptcha()">Check</button>
+            </div>
+            <div class="message" id="message"></div>
+        
+            <script src="../css/telaDeCriarConta.css"></script>
+
+        <script src="../scripts/telaDeCriarConta.js"></script>
+        
+        <button class="create-button" id="createButton">Create</button>
+
+        <script src="../scripts/telaDeCriarConta.js"></script>
+        
+        <div class="final-text">By creating an account, you agree to our Terms of Use and acknowledge the data practices in our Privacy Policy.</div>
+    </div>
+    <script src="../scripts/telaDeCriarConta.js"></script>
+</body>
+</html>
