@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="URL_DIRETO_PARA_SUA_IMAGEM" alt="Descrição da Imagem" width="250">
+  <img src="blob:https://web.whatsapp.com/d480e87e-6923-4ad6-8b01-1b6bea6f7601" alt="Descrição da Imagem" width="250">
 </p>
-
 
 ### Projeto GameScore+ ###
 
