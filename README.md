@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="blob:https://web.whatsapp.com/d480e87e-6923-4ad6-8b01-1b6bea6f7601" alt="Descrição da Imagem" width="250">
+  <img src="https://www.canva.com/design/DAFtMm_N8ck/Bz0qin8EWr2_YZKulaoG2Q/edit?utm_content=DAFtMm_N8ck&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="Descrição da Imagem" width="250">
 </p>
 
 ### Projeto GameScore+ ###
