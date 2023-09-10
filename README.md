@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="![WhatsApp Image 2023-09-05 at 20 36 54](https://github.com/daykell1/GameScore/assets/54118755/7ac83874-b780-462a-a003-7a38f8e2fb78) " alt="Descrição da Imagem" width="250">
+  <img src="URL_DIRETO_PARA_SUA_IMAGEM" alt="Descrição da Imagem" width="250">
 </p>
 
 
