@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://github.com/daykell1/GameScore/blob/main/assets/54118755/4021255e-b6a6-46a0-96d2-2e2e8cea57fd.png" alt="Descrição da Imagem" width="250">
-</p> 
+  <img src="![WhatsApp Image 2023-09-05 at 20 36 54](https://github.com/daykell1/GameScore/assets/54118755/7ac83874-b780-462a-a003-7a38f8e2fb78) " alt="Descrição da Imagem" width="250">
+</p>
 
 
 ### Projeto GameScore+ ###
