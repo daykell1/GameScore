@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "2323",
+    "database": "GameScore",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "2323",
+    "database": "GameScore",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "2323",
+    "database": "GameScore",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
+
