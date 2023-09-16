@@ -1,6 +1,7 @@
 // Obtém uma referência para o botão
 const createButton = document.getElementById('createButton');
 
+
 // Adiciona um ouvinte de evento de clique ao botão
 createButton.addEventListener('click', function() {
     // Alterna a classe clicked quando o botão for clicado
