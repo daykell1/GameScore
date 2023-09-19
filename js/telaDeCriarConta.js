@@ -1,43 +1,50 @@
-// Obtém uma referência para o botão
-const createButton = document.getElementById('createButton');
+document.addEventListener('DOMContentLoaded', function () {
+    const createButton = document.getElementById('createButton');
 
-
-// Adiciona um ouvinte de evento de clique ao botão
-createButton.addEventListener('click', function() {
-    // Alterna a classe clicked quando o botão for clicado
-    createButton.classList.toggle('clicked');
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Gere um problema matemático simples para o CAPTCHA
-    const num1 = Math.floor(Math.random() * 10);
-    const num2 = Math.floor(Math.random() * 10);
-    const captchaText = document.getElementById('captchaText');
-    captchaText.textContent = `${num1} + ${num2} =`;
-
-    const captchaInput = document.getElementById('captchaInput');
-    const captchaResult = document.getElementById('captchaResult');
-
-    const checkCaptcha = document.getElementById('checkCaptcha');
-    checkCaptcha.addEventListener('click', function() {
-        const userAnswer = parseInt(captchaInput.value);
-        const correctAnswer = num1 + num2;
-
-        if (userAnswer === correctAnswer) {
-            captchaResult.textContent = 'CAPTCHA correto! Você é um humano.';
-            captchaResult.style.color = 'green';
-        } else {
-            captchaResult.textContent = 'CAPTCHA incorreto. Tente novamente.';
-            captchaResult.style.color = 'red';
-            // Atualize o CAPTCHA
-            num1 = Math.floor(Math.random() * 10);
-            num2 = Math.floor(Math.random() * 10);
-            captchaText.textContent = `${num1} + ${num2} =`;
-            captchaInput.value = '';
-        }
+    const express = require('express');
+    const app = express();
+    const Sequelize = require('sequelize');
+    const bodyParser = require('body-parser');
+    
+    // Configurar Sequelize
+    const sequelize = new Sequelize('GameScore', 'postgres', '2323',{
+      host: 'localhost',
+      dialect: 'postgres', // ou outro banco de dados
     });
+    
+    // Definir um modelo de usuário
+    const User = sequelize.define('User', {
+      username: Sequelize.STRING,
+      email: Sequelize.STRING,
+      password: Sequelize.STRING,
+    });
+    
+    // Configurar o Body Parser para lidar com dados do formulário
+    app.use(bodyParser.urlencoded({ extended: true }));
+    
+    // Rota para receber os dados do formulário
+    app.post('/cadastrar', async (req, res) => {
+      const { username, email, password } = req.body;
+    
+      try {
+        // Crie um novo usuário no banco de dados usando o modelo User
+        const newUser = await User.create({ username, email, password });
+        res.status(201).json(newUser);
+      } catch (error) {
+        console.error('Erro ao criar o usuário:', error);
+        res.status(500).json({ error: 'Erro ao criar o usuário.' });
+      }
+    });
+    
+    app.listen(3000, () => {
+      console.log('Servidor rodando na porta 3000');
+    });
+    
 });
+
+
+
+
 
 
 // captcha 
@@ -77,40 +84,33 @@ function validateCaptcha() {
 // Inicialize exibindo o captcha quando a página carregar
 displayCaptcha();
 
-    // Implemente a validação do captcha e a validação de outros campos aqui
-    // Verifique o nome de usuário, o email, a senha, etc.
-  
-    if (validationPassed) {
-      // Se a validação for bem-sucedida, envie os dados para o servidor
-      const username = document.querySelector('.login-input[name="username"]').value;
-      const email = document.querySelector('.login-input[name="email"]').value;
-      const password = document.querySelector('.login-input[name="password"]').value;
-  
-      // Use a função fetch() ou outra biblioteca para enviar os dados ao servidor
-      fetch('/criar-conta', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username,
-          email,
-          password,
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          // Verifique a resposta do servidor e forneça feedback ao usuário
-          if (data.success) {
-            // Redirecione o usuário para a página de sucesso
-            window.location.href = '/sucesso';
-          } else {
-            // Mostre uma mensagem de erro ao usuário
-            document.querySelector('#message').textContent = data.message;
-          }
-        })
-        .catch((error) => {
-          console.error('Erro ao enviar dados para o servidor:', error);
-        });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const successParam = urlParams.get('success');
+
+    const resultMessage = document.getElementById('result-message');
+
+    if (successParam === 'true') {
+        resultMessage.textContent = 'Usuário cadastrado com sucesso!';
+        resultMessage.style.color = 'green';
+    } else if (successParam === 'false') {
+        resultMessage.textContent = 'Erro ao cadastrar o usuário. Tente novamente.';
+        resultMessage.style.color = 'red';
     }
-  
+});
+
+
+// Obtém uma referência para o botão "Create"
+const createButton = document.getElementById('createButton');
+
+// Adiciona um ouvinte de evento de clique ao botão
+createButton.addEventListener('click', function() {
+    // Adicione a classe "clicked" ao botão
+    createButton.classList.add('clicked');
+
+    // Use setTimeout para remover a classe após um breve atraso (por exemplo, 500ms)
+    setTimeout(function() {
+        createButton.classList.remove('clicked');
+    }, 500); // 500ms (meio segundo) de atraso
+});
