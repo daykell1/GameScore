@@ -170,3 +170,15 @@ button {
     margin-top: 10px; /* Adiciona uma margem superior de 10 pixels para separar da entrada de texto */
     font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
 }
+
+/* Estilos para o botão de criação de conta */
+.create-button {
+    /* Seus estilos existentes */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Estilos para o botão quando clicado (classe "clicked") */
+.create-button.click-animation:active {
+    background-color: #0056b3; /* Cor de fundo quando clicado */
+    transform: scale(0.95); /* Reduz o tamanho do botão quando clicado */
+}
