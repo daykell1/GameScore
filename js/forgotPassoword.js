@@ -16,3 +16,16 @@ forgotButton.addEventListener('click', () => {
     // Chame a função forgotpassword com o email e o botão
     forgotpassword(email, forgotButton);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const forgotPasswordButton = document.getElementById("forgotPasswordButton");
+
+    // Adicione um ouvinte de clique ao botão de recuperação de senha
+    forgotPasswordButton.addEventListener("click", function () {
+        // Simular o envio do formulário (você deve implementar a lógica real aqui)
+        // Neste exemplo, exibiremos um alerta para representar o envio do formulário
+        alert("Formulário de recuperação de senha enviado. Verifique seu e-mail.");
+    });
+});
+
