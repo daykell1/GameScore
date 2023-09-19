@@ -76,3 +76,41 @@ function validateCaptcha() {
 
 // Inicialize exibindo o captcha quando a página carregar
 displayCaptcha();
+
+    // Implemente a validação do captcha e a validação de outros campos aqui
+    // Verifique o nome de usuário, o email, a senha, etc.
+  
+    if (validationPassed) {
+      // Se a validação for bem-sucedida, envie os dados para o servidor
+      const username = document.querySelector('.login-input[name="username"]').value;
+      const email = document.querySelector('.login-input[name="email"]').value;
+      const password = document.querySelector('.login-input[name="password"]').value;
+  
+      // Use a função fetch() ou outra biblioteca para enviar os dados ao servidor
+      fetch('/criar-conta', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username,
+          email,
+          password,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          // Verifique a resposta do servidor e forneça feedback ao usuário
+          if (data.success) {
+            // Redirecione o usuário para a página de sucesso
+            window.location.href = '/sucesso';
+          } else {
+            // Mostre uma mensagem de erro ao usuário
+            document.querySelector('#message').textContent = data.message;
+          }
+        })
+        .catch((error) => {
+          console.error('Erro ao enviar dados para o servidor:', error);
+        });
+    }
+  

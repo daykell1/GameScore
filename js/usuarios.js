@@ -6,18 +6,30 @@ const sequelize = new Sequelize('GameScore', 'postgres', '2323', {
 
 const Usuario = sequelize.define('Usuario', {
   id: {
-    type: DataTypes.INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-  },
-  nome: {
-    type: DataTypes.STRING,
     allowNull: false,
+    autoIncrement: true,
+    primaryKey: true,
+    type: Sequelize.INTEGER
+  },
+  username: {
+    type: Sequelize.STRING,
+    allowNull: false
   },
   email: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  password: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  createdAt: {
     allowNull: false,
-    unique: true,
+    type: Sequelize.DATE
+  },
+  updatedAt: {
+    allowNull: false,
+    type: Sequelize.DATE
   },
 });
 
