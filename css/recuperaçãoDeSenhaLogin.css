@@ -41,6 +41,7 @@ body {
 /* Estilos para o botão de recuperação de senha quando clicado */
 
 .login-button {
+    background-color: #0056b3;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -51,7 +52,7 @@ body {
 }
 
 /* Estilos para o botão de recuperação de senha quando clicado */
-.login-button.clicked :active {
+.login-button.clicked:active {
     background-color: #0056b3; /* Cor de fundo quando clicado */
     transform: scale(0.95); /* Reduz o tamanho do botão quando clicado */
 }
