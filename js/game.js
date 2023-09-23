@@ -4,14 +4,14 @@ const sequelize = new Sequelize('GameScore', 'postgres', '2323', {
   dialect: 'postgres'
 });
 
-const User = sequelize.define('teste', {
-  Teste1: {
+const User = sequelize.define('game', {
+  game1: {
     type: Sequelize.STRING
   },
-  Teste2: {
+  game2: {
     type: Sequelize.STRING
   },
-  Teste3: {
+  game3: {
     type: Sequelize.STRING
   }
 });
@@ -26,7 +26,7 @@ sequelize.sync()
 
 // Crie um novo usuário
 User.create({
-    teste1: 'joao123',
+    game1: 'mario',
   })
     .then((user) => {
       console.log('Usuário criado:', user.toJSON());

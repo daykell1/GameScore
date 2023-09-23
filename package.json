@@ -10,5 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "debug": "^4.3.4",
+    "pg": "^8.11.3",
+    "sequelize": "^6.33.0"
   }
 }
