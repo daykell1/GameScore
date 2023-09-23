@@ -49,7 +49,7 @@ body {
 }
 
 /* Estilos para o botão de login quando clicado */
-.login-button.clicked {
+.login-button.clicked:active {
     background-color: #0056b3;
 }
 
