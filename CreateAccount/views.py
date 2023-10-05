@@ -1,8 +1,7 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from .models import Users
 from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse
-from django.contrib.auth import authenticate, login
 
 def create(request):
     if request.method == 'POST':
