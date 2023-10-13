@@ -13,3 +13,4 @@ def create(request):
         return HttpResponse("Cadastro feito com sucesso!")
     else:
         return render(request,"telaDeCriarConta.html")
+    

@@ -1,22 +1,45 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate
+from django.http import HttpResponse
+from django.contrib.auth import login  as login_django# Importando o modelo CustomUser
 
 def dashboard(request):
-    # Lógica para renderizar a página de destino após o login
-    return render(request, 'html/index.html')  # Certifique-se de que o caminho do seu template está correto
-
-def login_view(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            login(request, user)
-            print(f'Usuário {username} autenticado com sucesso.')
-            return redirect('dashboard')  # Redirecione para a página de dashboard
-        else:
-            # Exibir mensagem de erro de login
-            print(f'Falha na autenticação do usuário {username}.')
-            return render(request, 'telaDeLogin.html')
+    if request.method == "GET":
+        email = request.POST.get('email')  # Coletando o email do formulário
+        senha = request.POST.get('senha')
+        return render(request, 'index.html')
     else:
+        email=request.POST.get('email')
+        senha=request.POST.get('senha')
+
+        user = user.objects.filter(email=email)
+
+        if user:
+            return HttpResponse(' ja existe um usuário com esse email')
+        user = user.objects.createuser(email=email, senha= senha)
+
+        
+def login_view(request):
+    if request.method == 'GET':
         return render(request, 'telaDeLogin.html')
+    elif request.method == 'POST':
+        email = request.POST.get('email')
+        senha = request.POST.get('senha')
+
+        user = authenticate(request, email=email, senha=senha)
+
+        if user is not None:
+            login_django(request, user)
+            return redirect('index')
+        else:
+            return HttpResponse('Email ou senha inválidos',status=401)
+        
+
+      
+
+
+
+
+
+
+

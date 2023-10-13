@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="login-container">
-        <form method = "POST" action="{%url "create"%}"> {% csrf_token %}
+        <form action = "{% url 'login_view' %} " method="post"> {% csrf_token %}
         <div class="login-title">LOG IN </div>
-        <input type="text" class="login-input" placeholder="Email">
-        <input type="password" class="login-input" placeholder="Password">
+        <input type="text" class="login-input" name="email" placeholder="Email">
+        <input type="password" class="login-input" name="senha" placeholder="Password">        
         <div class="forgotpassword">
             <a href="recuperaçãoDeSenhaLogin.html">Forgot your password?</a>
         </div>
@@ -22,9 +22,7 @@
         </div>
     </form>
     </div>
-    <script src="script.js"></script>
-    <script src="../js/serv.js"></script>
-    <script src="../js/bancoLogin.js"></script>
-    
+    <script src="{% static 'js/telaLogin.js' %}"></script>
+    <script src="{%static 'js/serv.js' %}"></script>
 </body>
 </html>
