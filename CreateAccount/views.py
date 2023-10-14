@@ -7,8 +7,8 @@ def create(request):
     if request.method == 'POST':
         username = request.POST['username']
         email = request.POST['email']
-        senha = request.POST['senha']
-        user = Users(username=username, email=email, senha=make_password(senha))
+        password = request.POST['senha']
+        user = Users(username=username, email=email, password=make_password(password))
         user.save()
         return HttpResponse("Cadastro feito com sucesso!")
     else:
