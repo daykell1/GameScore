@@ -1,10 +1,12 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameScore+</title>
-    <link href="../Templates/static/css/home.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/hilogin" rel="stylesheet">
@@ -12,8 +14,11 @@
 </head>
 <body>
     <div class="container-navbar">
+        <form method = "POST" action="{%url "index"%}"> {% csrf_token %}
     <ul class="navbar">
         <li class="img"><a href="#"><img src="../img/GameScore.png"></a></li>
+        
+
         <li class="BarraPesquisa">
             <form action="/pagina-de-resultados.html" method="GET">
                 <div class="barra-de-pesquisa">

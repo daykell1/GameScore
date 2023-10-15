@@ -11,3 +11,4 @@ class CustomUser(AbstractUser):
     user_permissions = models.ManyToManyField(
         Permission, related_name='customuser_set'
     )
+
