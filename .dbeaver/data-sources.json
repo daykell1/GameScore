@@ -1,0 +1,53 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-18b30b55014-19cd3322d70a91da": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "postgres 2",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-11",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18b30c31382-37fdcfcee8a6116d": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "postgres",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-15",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Desenvolvimento",
+			"color": "255,255,255",
+			"description": "Banco de dados de desenvolvimento",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
