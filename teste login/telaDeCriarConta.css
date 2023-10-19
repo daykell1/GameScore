@@ -7,16 +7,38 @@
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    width: 500px;
-    max-width: 300%px; /* Largura máxima */
+    max-width: 100%; /* Largura máxima */
     text-align: center;
     display: flex;
 }
 
+.left-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para a imagem */
+.left-content img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para a parte direita (formulário) do contêiner */
+.right-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+
 /* Estilos para o título do formulário */
 .create-account-title {
     color: #007BFF; /* Cor do texto */
-    font-size: 24px; /* Tamanho da fonte */
+    font-size: 20px; /* Tamanho da fonte */
     margin-bottom: 20px; /* Espaçamento inferior */
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -25,7 +47,7 @@
 /* Estilos para campos de entrada de texto */
 .login-input {
     margin-left: -10px;
-    font-size: 19px;
+    font-size: 10px;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -47,7 +69,7 @@
 .terms-text {
     flex: 1;
     color: #837E7E;
-    font-size: 14px;
+    font-size: 9px;
     margin-left: 10px;
 }
 
@@ -97,28 +119,44 @@
 /* Estilos para o texto final abaixo do botão */
 .final-text {
     margin-top: 20px;
-    font-size: 14px;
-    color: #837E7E;
+    font-size: 10px;
+    color: #6d6d6d;
 }
 
 /* Estilos para o formulário */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte do texto */
-    background-color: rgb(35, 46, 77); /* Cor de fundo do corpo da página */
-    display: flex; /* Usa um modelo flexível de layout */
-    justify-content: center; /* Centraliza horizontalmente os elementos */
-    align-items: center; /* Centraliza verticalmente os elementos */
-    height: 100vh; /* Define a altura da tela inteira */
-    margin: 0; /* Remove margens padrão do corpo */
+    font-family: Arial, sans-serif;
+    background-color: #1d2731;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-form {
-    background-color: rgb(35, 46, 77);/* Cor de fundo do formulário */
-    padding: 20px; /* Espaçamento interno dentro do formulário */
-    border-radius: 5px; /* Cantos arredondados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    text-align: center; /* Centraliza o conteúdo do formulário */
+/* Estilos para o contêiner */
+.container {
+    display: flex;
+    background-color: rgb(35, 46, 77);
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: center;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Cria espaço igual nas laterais */
+    flex-direction: row; /* Alinha os elementos horizontalmente */
 }
+
+/* Estilos para o formulário */
+form {
+    background-color: rgb(35, 46, 77);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 55%; /* Ajuste a largura conforme necessário */
+}
+
 
 
 input[type="submit"]:hover {
@@ -137,19 +175,18 @@ body {
 
 /* Define o estilo para o contêiner do captcha */
 .captcha-container {
-
-    width: 150px; /* Define a largura do contêiner como 200 pixels */
+    width: 60%; /* Define a largura do contêiner como 200 pixels */
     margin: 10px auto; /* Centraliza o contêiner horizontalmente com margens superior e inferior de 50px */
     background-color: #cccaca; /* Define a cor de fundo como branco (#fff) */
-    border: 1px solid #ccc; /* Adiciona uma borda de 1 pixel sólida com a cor cinza (#ccc) ao redor do contêiner */
-    padding: 50px; /* Define o espaçamento interno do contêiner como 20 pixels */
+    border: 5px solid #ccc; /* Adiciona uma borda de 1 pixel sólida com a cor cinza (#ccc) ao redor do contêiner */
+    padding: 40px; /* Define o espaçamento interno do contêiner como 20 pixels */
     text-align: center; /* Centraliza o texto dentro do contêiner horizontalmente */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Aplica uma sombra suave ao contêiner */
 }
 
 /* Define o estilo para o texto do captcha */
 .captcha-text {
-    font-size: 20px; /* Define o tamanho da fonte como 24 pixels */
+    font-size: 15px; /* Define o tamanho da fonte como 24 pixels */
     margin-bottom: 10px; /* Adiciona uma margem inferior de 20 pixels para separar do próximo elemento */
     background-color: #eee; /* Define a cor de fundo como cinza claro (#eee) */
     padding: 5px; /* Define o espaçamento interno como 10 pixels */
@@ -161,7 +198,7 @@ body {
 input[type="text"] {
     margin-left: -10px;
     padding: 10px; /* Define o espaçamento interno como 10 pixels */
-    font-size: 20px; /* Define o tamanho da fonte como 16 pixels */
+    font-size: 10px; /* Define o tamanho da fonte como 16 pixels */
     border: 1px solid rgb(207, 204, 204); /* Adiciona uma borda de 1 pixel sólida com a cor cinza (#ccc) ao redor da entrada de texto */
     border-radius: 4px; /* Arredonda os cantos da entrada de texto com um raio de 4 pixels */
     width: 100%; /* Define a largura como 100% para preencher o contêiner horizontalmente */
@@ -176,7 +213,7 @@ button {
     color: #f5f1f1; /* Define a cor do texto como branco (#fff) */
     border: none; /* Remove a borda do botão */
     padding: 10px 20px; /* Define o espaçamento interno do botão */
-    font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+    font-size: 12px; /* Define o tamanho da fonte como 18 pixels */
     cursor: pointer; /* Altera o cursor para uma mãozinha quando o mouse passa sobre o botão */
 }
 
@@ -199,5 +236,20 @@ button {
 }
 
 /* Estilos para a imagem do lado direito */
+
+.right-content {
+    flex: 1;
+    background: linear-gradient(to bottom, #007bff, #004793, #003c7d); /* Fundo com gradiente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Estilos para a imagem */
+.right-content img {
+    max-width: 100%; /* Largura máxima de 100% */
+    height: auto; /* Altura automática proporcional à largura */
+}
 
 
