@@ -1,0 +1,102 @@
+/* Define estilos básicos para o corpo da página */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura da tela inteira */
+    background-color: #1d2731; /* Cor de fundo */
+}
+
+
+
+/* Estilos para o container de login */
+.login-container {
+    background-color: rgb(35, 46, 77);
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    padding: 90px;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    max-width: 100%; /* Largura máxima */
+    text-align: center;
+}
+
+/* Estilos para o título do login */
+.login-title {
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #007BFF; /* Cor do texto */
+    font-size: 30px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  
+}
+/* Estilos para campos de entrada de login */
+.login-input {
+    margin-left:-20px ;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #2e2d2d; /* Borda */
+    border-radius: 15px; /* Cantos arredondados */
+    background-color: #cccaca;
+    text-align: gray;
+}
+
+/* Estilos para o botão de login */
+.login-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+.login-button {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+
+    /* Efeito de brilho */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+.login-button:hover {
+    /* Efeito de brilho no hover */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.9), 0 0 30px rgba(0, 123, 255, 0.7);
+}
+
+
+/* Estilos para o botão de login quando clicado */
+.login-button.clicked:active {
+    background-color: #0056b3;
+}
+
+/* Estilos para o link "Esqueceu a senha?" */
+.forgotpassword a {
+    color: #f5eeee; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado do link */
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Estilos para o link "Criar uma conta" */
+.create-account a {
+    color: #f7f1f4; /* Cor do texto */
+    text-decoration: none; 
+    font-family: Arial, sans-serif;
+
+
+}
+
+img {
+    float: left; /* Alinha a imagem à esquerda */
+    margin-right: px; /* Espaço entre a imagem e o conteúdo da tela de login */
+}

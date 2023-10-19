@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telaDeLogin.css">
+    <title>Login GameScore</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src="../img/logoDeTela.png" alt="Descrição da imagem" width="500" height="500">
+    </div> 
+    <div class="login-container">
+        <form action = "{% url 'login_view' %} " method="post">
+        <div class="login-title">LOG IN </div>
+        <input type="text" class="login-input" name="email" placeholder="Email">
+        <input type="password" class="login-input" name="senha" placeholder="Password">        
+        <div class="forgotpassword">
+            <a href="recuperaçãoDeSenhaLogin.html">Forgot your password?</a>
+        </div>
+        <button type="submit" class="login-button clicked">LOG IN</button>
+        <div class="create-account">  
+          
+           <br><a href="../CreateAccount/Templates/telaDeCriarConta.html">Create an account</a>
+        </div>
+    </form>
+    </div> 
+    <script src="{% static 'js/telaLogin.js' %}"></script>
+    <script src="{%static 'js/serv.js' %}"></script>
+</body>
+</html>
