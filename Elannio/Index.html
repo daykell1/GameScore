@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameScore+</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="navbar">
+        <li class="img"><a href="#"><img src="img/GameScore.png"></a></li>
+        <li class="BarraPesquisa">
+            <form action="/pagina-de-resultados.html" method="GET">
+                <div class="barra-de-pesquisa">
+                    <input type="text" name="q" placeholder="Search..." autocomplete="off" />
+                    <span class="lupa"><i class="fas fa-search"></i></span>
+                </div>
+            </form>
+        </li>
+        <li class="game"><a href="#">Game</a></li>
+        <li class="sing-in"><a href="cadastro.html">Sing In</a></li>
+    </ul>
+    <div class="carrossel" id="carousel">
+        <span class="carousel-prev">❮</span>
+        <div class="banner-container">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="img/super.webp" alt="Banner 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/sonic.webp" alt="Banner 2">
+                </div>
+                <!-- Adicione mais banners conforme necessário -->
+            </div>
+        </div>
+        <span class="carousel-next">❯</span>
+    </div>
+    
+    <script src="carrossel.js"></script>
+    
+    <ul class="categoria">
+        <li>
+            <select id="Categorias">
+                <option value="Ação">Category</option>
+                <option value="3d">Action</option>
+                <option value="Ação">3d</option>
+                <option value="3d">2d</option>
+                <option value="Ação">Nintendo</option>
+                <option value="3d">Playstation</option>
+            </select>
+            <script src="jogosfavoritos.js"></script>
+        </li>
+    </ul>
+    <section class="crew-picks">
+        <h2>Releases</h2>
+        <ul>
+            <li>
+                <figure>
+                    <img src="img/Kirby.jpg" alt="jogo1">
+                    <figcaption>
+                        <h3>Game 1</h3>
+                        <p>Game description 1.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/Kirby.jpg" alt="jogo2">
+                    <figcaption>
+                        <h3>Game 2</h3>
+                        <p>Game description 2.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/Kirby.jpg" alt="jogo3">
+                    <figcaption>
+                        <h3>Game 3</h3>
+                        <p>Game description 3.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <!-- Adicione mais jogos com descrições conforme necessário -->
+        </ul>
+    </section>
+    <section class="crew-picks2">
+        <h2>Recommended</h2>
+        <ul>
+            <li>
+                <figure>
+                    <img src="img/Kirby.jpg" alt="jogo1">
+                    <figcaption>
+                        <h3>Game 1</h3>
+                        <p>Game description 1.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/Kirby.jpg" alt="jogo2">
+                    <figcaption>
+                        <h3>Game 2</h3>
+                        <p>Game description 2.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/Kirby.jpg" alt="jogo3">
+                    <figcaption>
+                        <h3>Game 3</h3>
+                        <p>Game description 3.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <!-- Adicione mais jogos com descrições conforme necessário -->
+        </ul>
+    
+    </section>
+    <ul class="navjogosfavoritos">
+    </ul>
+    <section class="jogos-favoritos">
+        <h2>Best Of The Week</h2>
+        <ul class="lista-jogos" id="jogos-favoritos">
+            <!-- Os jogos favoritos serão preenchidos aqui com JavaScript -->
+        </ul>
+    </section>
+    <section class="escolha-de-jogos-3">
+        <!-- Item 1 -->
+        <div class="jogo-escolhido-3">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 1">
+            <h3>Game 1</h3>
+            <p>Game description 1.</p>
+        </div>
+    
+        <!-- Item 2 -->
+        <div class="jogo-escolhido-3">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 2">
+            <h3>Game 2</h3>
+            <p>Game description 2.</p>
+        </div>
+    
+        <!-- Item 3 -->
+        <div class="jogo-escolhido-3">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 3">
+            <h3>Game 3</h3>
+            <p>Descrição do jogo 3.</p>
+        </div>
+        <div class="jogo-escolhido-3">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 3">
+            <h3>Game 4</h3>
+            <p>Game description 3.</p>
+        </div>
+        
+        <!-- Adicione mais jogos conforme necessário -->
+    </section>
+        <ul class="navjogosfavoritos">
+    </ul>
+    <section class="jogos-curtidos">
+        <h2>Best Of The Year</h2>
+        <ul class="lista-jogos" id="jogos-favoritos">
+            <!-- Os jogos favoritos serão preenchidos aqui com JavaScript -->
+        </ul>
+        <section class="escolha-de-jogos-2">
+            <!-- Item 1 -->
+            <div class="jogo-escolhido-2">
+                <img src="img/zelda.jpg" alt="Escolha do Editor 1">
+                <h3>Game 1</h3>
+                <p>Game description 1.</p>
+            </div>
+        
+            <!-- Item 2 -->
+            <div class="jogo-escolhido-2">
+                <img src="img/zelda.jpg" alt="Escolha do Editor 2">
+                <h3>Game 2</h3>
+                <p>Game description 2.</p>
+            </div>
+        
+            <!-- Item 3 -->
+            <div class="jogo-escolhido-2">
+                <img src="img/zelda.jpg" alt="Escolha do Editor 3">
+                <h3>Game 3</h3>
+                <p>Game description 3.</p>
+            </div>
+            <div class="jogo-escolhido-2">
+                <img src="img/zelda.jpg" alt="Escolha do Editor 3">
+                <h3>Game 4</h3>
+                <p>Game description 4.</p>
+            </div>
+            
+            <!-- Adicione mais jogos conforme necessário -->
+        </section>
+        
+    </section>
+    <ul class="navjogosfavoritos">
+    </ul>
+    <section class="jogos-negativos">
+        <h2>Worst of the year</h2>
+        <ul class="lista-jogos" id="jogos-favoritos">
+            <!-- Os jogos favoritos serão preenchidos aqui com JavaScript -->
+        </ul>
+    </section>
+    <section class="escolha-de-jogos">
+        <!-- Item 1 -->
+        <div class="jogo">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 1">
+            <h3>Game 1</h3>
+            <p>Game description 1.</p>
+        </div>
+    
+        <!-- Item 2 -->
+        <div class="jogo">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 2">
+            <h3>Game 2</h3>
+            <p>Game description 2.</p>
+        </div>
+    
+        <!-- Item 3 -->
+        <div class="jogo">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 3">
+            <h3>Game 3</h3>
+            <p>Game description 3.</p>
+        </div>
+        <div class="jogo">
+            <img src="img/zelda.jpg" alt="Escolha do Editor 3">
+            <h3>Game 4</h3>
+            <p>Game description 4</p>
+        </div>
+        
+        <!-- Adicione mais jogos conforme necessário -->
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                </div>
+                <div class="footer-section links">
+                    <ul>
+                        <li><a href="/" class="social-link1">Home</a></li>
+                        <li><span class="separator1">|</span></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61551002249207" class="social-link"><img src="img/facebook.png" alt="Facebook" class="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/gameescore/" class="social-link"><img src="img/instagram.png" alt="Instagram" class="instagram"></a></li>
+                        <li><a href="https://twitter.com/GameScoree" class="social-link"><img src="img/twitter.png" alt="Twitter" class="twitter"></a></li>
+                        <li><a href="https://www.tiktok.com/@gamescoreee?lang=pt-BR" class="social-link"><img src="img/tiktok.png" alt="TikTok" class="tiktok"></a></li>
+                        <li><span class="separator2">|</span></li>
+                        <li><a href="/" class="social-link2">Sign In</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section name links">
+                <ul class="links-mid">
+                    <li><a href="/" class="social-link">About</a></li>
+                    <li><a href="/" class="social-link">Help</a></li>
+                    <li><a href="/" class="social-link">Terms</a></li>
+                    <li><a href="/" class="social-link">Support</a></li>
+                </ul>
+            </div>
+            <div class="container-autoral">
+                <p>&copy; 2023 by GameScore.com, all rights reserved.</p>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>

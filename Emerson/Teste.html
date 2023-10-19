@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="perfil_usuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Estilos para o botão de upload de imagem personalizado */
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        #imagemInput {
+            display: none;
+        }
+
+        .upload-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px; /* Ajuste o tamanho do botão aqui */
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .upload-button:hover {
+            background-color: #258cd1;
+        }
+
+        /* Estilos para a imagem carregada */
+        #imagemExibida {
+            max-width: 200px;
+            max-height: 200px;
+            margin-right: 20px; /* Adicione margem à direita para espaçamento */
+        }
+
+        /* Estilos para o campo de entrada do nome do usuário */
+        #nomeUsuario {
+            width: 250px; /* Ajuste a largura conforme necessário */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 20px; /* Adicione margem à direita para espaçamento */
+        }
+    </style>
+</head>
+<body id="principal">
+    <div>
+        <ul class="navbar">
+            <li class="img"><a href="#"><img src="GameScore.png"></a></li>
+            <li class="BarraPesquisa">
+                <form action="/pagina-de-resultados.html" method="GET">
+                    <div class="barra-de-pesquisa">
+                        <input type="text" name="q" placeholder="Search..." autocomplete="off" />
+                        <span class="lupa"><i class="fas fa-search"></i></span>
+                    </div>
+                </form>
+            </li>
+            <li class="game"><a href="index.html">Home</a></li>
+            <li class="sing-in"><a href="cadastro.html">Sing In</a></li>
+        </ul>
+       
+        <div class="container">
+            <img id="imagemExibida" src="perfioadd.png" alt="Imagem Carregada">
+            
+            <!-- Campo de entrada para o nome do usuário -->
+            <div style="display: flex; flex-direction: column;">
+                <input type="text" id="nomeUsuario" placeholder="Digite seu nome">
+                <label for="imagemInput" class="upload-button" onclick="selecionarImagem()">
+                    <i class="fas fa-upload"></i> Carregar Imagem
+                </label>
+            </div>
+            <input type="file" id="imagemInput" style="display: none;">
+        </div>
+
+        <div class="img-center">
+            <a href="outra_pagina.html">
+                <img src="Favorito.png" alt="Texto alternativo" width="500" height="300">
+            </a>
+            <a href="outra_pagina.html">
+                <img src="review.png" alt="Texto alternativo" width="500" height="300">
+            </a>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                    </div>
+                    <div class="footer-section links">
+                        <ul>
+                            <li><a href="/" class="social-link1">Home</a></li>
+                            <li><span class="separator1">|</span></li>
+                            <li><a href="/" class="social-link"><img src="facebook.png" alt="Facebook" class="facebook"></a></li>
+                            <li><a href="/" class="social-link"><img src="instagram.png" alt="Instagram" class="instagram"></a></li>
+                            <li><a href="/" class="social-link"><img src="twitter.png" alt="Twitter" class="twitter"></a></li>
+                            <li><a href="/" class="social-link"><img src="tiktok.png" alt="TikTok" class="tiktok"></a></li>
+                            <li><span class="separator2">|</span></li>
+                            <li><a href="/" class="social-link2">Sign In</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section name links">
+                    <ul class="links-mid">
+                        <li><a href="/" class="social-link">About</a></li>
+                        <li><a href="/" class="social-link">Help</a></li>
+                        <li><a href="/" class="social-link">Terms</a></li>
+                        <li><a href="/" class="social-link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="container-autoral">
+                    <p>&copy; 2023 by GameScore.com, Todos os direitos reservados.</p>
+                </div>
+            </div> 
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

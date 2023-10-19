@@ -27,49 +27,7 @@
             <li class="sing-in"><a href="cadastro.html">Sing In</a></li>
         </ul>
        
-       <div>
-        <input type="file" id="imagemInput" style="display: none;">
-        
-        <label for="imagemInput" id="uploadBotao" class="upload-button" onclick="selecionarImagem()">
-            <i class="fas fa-upload"></i> Carregar Imagem
-        </label>
-        
-        <br>
-        <img id="imagemExibida" src="" alt="Imagem Carregada" style="display: none; max-width: 100%; max-height: 200px;">
-    
-        <script>
-            function selecionarImagem() {
-                const imagemInput = document.getElementById('imagemInput');
-                const imagemExibida = document.getElementById('imagemExibida');
-    
-                imagemInput.addEventListener('change', function () {
-                    const arquivo = imagemInput.files[0];
-    
-                    if (arquivo) {
-                        const leitor = new FileReader();
-    
-                        leitor.onload = function (e) {
-                            imagemExibida.src = e.target.result;
-                            imagemExibida.style.display = 'block';
-                        };
-    
-                        leitor.readAsDataURL(arquivo);
-                    }
-                });
-            }
-        </script>
-       </div>
-        
-        <div class="img-center">
-            <a href="outra_pagina.html">
-                <img src="Favorito.png" alt="Texto alternativo" width="300" height="300">
-            </a>
-            <a href="outra_pagina.html">
-                <img src="review.png" alt="Texto alternativo" width="300" height="300">
-                
-            </a>
-        </div>
-        
+       
 
         <footer>
             <div class="container">
@@ -88,6 +46,7 @@
                             <li><a href="/" class="social-link2">Sign In</a></li>
     
                         </ul>
+                        
                     </div>
                 </div>
                 <div class="footer-section name links">
