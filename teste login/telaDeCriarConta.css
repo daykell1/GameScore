@@ -45,7 +45,7 @@
 /* Estilos para o texto dos termos e condições */
 .terms-text {
     flex: 1;
-    color: #333;
+    color: #837E7E;
     font-size: 14px;
     margin-left: 10px;
 }
@@ -67,7 +67,7 @@
 /* Estilos para o botão de criação de conta */
 .create-button {
     background-color: blueClear;
-    color:  #cccaca;
+    color: white;
     border: 1px solid #666;
     padding: 10px 20px;
     border-radius: 5px;
@@ -139,7 +139,7 @@ body {
 
     width: 150px; /* Define a largura do contêiner como 200 pixels */
     margin: 10px auto; /* Centraliza o contêiner horizontalmente com margens superior e inferior de 50px */
-    background-color: #f5eeee; /* Define a cor de fundo como branco (#fff) */
+    background-color: #cccaca; /* Define a cor de fundo como branco (#fff) */
     border: 1px solid #ccc; /* Adiciona uma borda de 1 pixel sólida com a cor cinza (#ccc) ao redor do contêiner */
     padding: 50px; /* Define o espaçamento interno do contêiner como 20 pixels */
     text-align: center; /* Centraliza o texto dentro do contêiner horizontalmente */
@@ -165,6 +165,7 @@ input[type="text"] {
     border-radius: 4px; /* Arredonda os cantos da entrada de texto com um raio de 4 pixels */
     width: 100%; /* Define a largura como 100% para preencher o contêiner horizontalmente */
     margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels para separar do próximo elemento */
+    
 }
 
 /* Define o estilo para o botão */
