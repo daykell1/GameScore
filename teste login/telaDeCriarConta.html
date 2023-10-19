@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="create-account-container">
+        <div class="login-container">
         <form method = "POST" action="{%url "create"%}">
         <div class="create-account-title">CREATE AN ACCOUNT</div>
         <input type="text" class="login-input"   name="username" placeholder="Username (min 6 and max 10 characters)">
@@ -34,19 +35,25 @@
                 <button onclick="validateCaptcha()">Check</button>
             </div>
             <div class="message" id="message"></div>
-        
+    
             <script src="{% static "css/telaDeCriarConta.css"%}"></script>
 
         <script src="{% static "js/telaDeCriarConta.js"%}"></script>
         
         <button type="submit" class="create-button click-animation">Create</button>
     </form>
-
-
+    </div>      
         <script src="../js/telaDeCriarConta.js"></script>
         
         <div class="final-text">By creating an account, you agree to our Terms of Use and acknowledge the data practices in our Privacy Policy.</div>
     </div>
+    <div class="create-account-container">
+        <img src="../img/logoDeTela.png" alt="Descrição da imagem" width="500" height="500">
+    </div> 
     <script src="../js/telaDeCriarConta.js"></script>
+    
 </body>
+
 </html>
+
+

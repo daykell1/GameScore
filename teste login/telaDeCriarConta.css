@@ -10,6 +10,7 @@
     width: 500px;
     max-width: 300%px; /* Largura máxima */
     text-align: center;
+    display: flex;
 }
 
 /* Estilos para o título do formulário */
@@ -196,3 +197,7 @@ button {
     background-color: #0056b3; /* Cor de fundo quando clicado */
     transform: scale(0.95); /* Reduz o tamanho do botão quando clicado */
 }
+
+/* Estilos para a imagem do lado direito */
+
+
