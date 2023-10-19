@@ -1,0 +1,616 @@
+@import url('https://fonts.cdnfonts.com/css/hilogin');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D12;
+    overflow: hidden;
+    display: flex; /*Usando flexbox para alinhar os itens horizontalmente */
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+li.game a, li.sing-in a  {
+    display: block;
+    color: #ddd;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: 'HILOGINCON', sans-serif;
+    font-weight: 800; /* Espessura "Extra Bold" se desejado */
+}
+
+/* Estilos para os links quando o mouse está sobre eles */
+li.nav-item a:hover {
+    background-color: #ddd;
+    color: #0D0D12;
+    width: 100%;
+    text-align: right;
+}
+
+body {
+    background-color: #35343D;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.barra-de-pesquisa {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding: 9px;
+    background-color: white; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    margin-left: -150px;
+    margin-right: 25px;
+}
+
+.barra-de-pesquisa input[type="text"]:focus {
+    outline: none;
+}
+
+.barra-de-pesquisa input {
+    flex: 1; /* Expande a entrada para ocupar o espaço restante */
+    border: none;
+    background: none; /* Remove o fundo da entrada de texto */
+}
+
+.lupa {
+    margin-right: 10px;
+    font-size: inherit;
+    color: #555;
+    cursor: pointer;
+}
+
+.img img {
+    width: 150px;
+    height: auto;
+    margin-right: 150px;
+}
+
+.navjogosfavoritos{
+    margin-top: -797px;
+}
+
+.jogos-curtidos{
+    margin-top: 572px;
+}
+
+.jogos-favoritos h2 {
+    margin-top: -100px;
+    color: #007BFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 300px;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 600px;
+}
+
+.jogos-negativos h2 {
+    margin-top: 860px;
+    color: #007BFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 300px;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 600px;
+}
+
+.jogos-favoritos .lista-jogos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.jogos-favoritos .lista-jogos li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 200px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+.jogos-favoritos .lista-jogos li img {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#botaoEscolha {
+    padding: 9px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    margin-left: px;
+}
+
+.categoria{
+    margin-top: 250px;
+    margin-left: 1091px;
+}
+
+.categoria select {
+    width: 250px;
+    padding: 10px; 
+    border: 2px solid #ccc; /* Borda da caixa de seleção */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: #fff;
+    outline: none;
+    margin-left: -350px;
+}
+
+.categoria select::after {
+    content: "\25BC"; /* Código unicode para uma seta para baixo */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.categoria select option:first-child {
+    color: #999;
+}
+
+.categoria select option {
+    padding: 5px;
+}
+
+.categoria select:focus {
+    border-color: #555;
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.carousel-prev, .carousel-next {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+    outline: none;
+    border: none;
+    margin: 305px;
+}
+
+/* Efeito de hover para os botões */
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Altere a cor de fundo ao passar o mouse */
+}
+
+/* Efeito de clique para os botões */
+.carousel-prev:active, .carousel-next:active {
+    transform: translateY(-50%) scale(0.95); /* Reduza o tamanho e desloque ao clicar */
+}
+
+.carousel-prev {
+    left: 0;
+    margin-top: 115px;
+    margin-left: 303px;
+}
+
+.carousel-next {
+    right: 0;
+    margin-top: 115px;
+}
+
+.banner-container {
+    max-height: 300px;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center; 
+}
+
+.banner-container img {
+    max-width: 891px;
+    max-height: 100%;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-left: 18px;
+}
+
+.jogos-curtidos h2 {
+    margin-top: 300px;
+    color: #007BFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 300px;
+    border-bottom: 2px solid #ddd; 
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 600px;
+}
+
+footer {
+    background-color: #272424;
+    color: #fff;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    line-height: 18px
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Alterado para espaço entre os elementos */
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Tornar as imagens flexíveis para alinhá-las horizontalmente */
+    justify-content: center; 
+    align-items: center; 
+    margin-left: -700px;
+}
+
+ul.links-mid {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centralizar as imagens horizontalmente */
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+ul.links-mid li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ul a {
+    display: inline-block;
+    margin-right: 40px; /* Espaçamento entre as imagens */
+}
+
+.facebook {
+    width: 25px;
+    height: auto;
+}
+
+.instagram {
+    width: 20px;
+    height: auto;
+}
+
+.twitter {
+    width: 25px;
+    height: auto;
+}
+
+.tiktok {
+    width: 25px;
+    height: auto;
+}
+
+.footer-section.name.links {
+    flex: 1;
+    text-align: center;
+}
+
+.container-autoral {
+    text-align: center;
+}
+
+.container-autoral p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.home-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    margin-left: 0px;
+}
+
+.social-link1 {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif; 
+    margin-left: -12px; 
+}
+
+.social-link2 {
+    color: #fff;
+    text-decoration: none; /* Remova o sublinhado dos links */
+    font-family: 'Lato', sans-serif; 
+    margin-left: -3px;
+}
+
+.separator1{
+    margin-left: -30px;
+}
+
+.separator2{
+    margin-left: -20px;
+}
+
+/* Estilo para a seção Crew Picks */
+.crew-picks {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+    background-color: #007bffcb;
+    padding: 20px;
+    width: 250px;
+    margin-left: 945px;
+    margin-top: 55px;
+    height: 360px;
+}
+
+.crew-picks2 {
+    background-color: #007bffcb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 5%;
+    width: 250px;
+    margin-left: 945px;
+    margin-top: 55px;
+    height: 360px;
+}
+
+/* Estilo para o título */
+.crew-picks h2 {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.crew-picks ul {
+    list-style-type: none;
+    padding: 0;
+    display: block; /* Altere para "block" para exibir os filmes verticalmente */
+    overflow: hidden; /* Para lidar com overflow vertical */
+}
+
+/* Estilo para cada filme (li) */
+.crew-picks li {
+    margin-bottom: 10px; /* Espaço entre os filmes */
+    width: auto; /* Largura automática */
+}
+
+/* Estilo para a imagem do filme */
+.crew-picks img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+
+.crew-picks h3 {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-left: 560px;
+    color: #d8d8d8;
+}
+
+.crew-picks p {
+    text-align: center;
+    font-size: 10px;
+    margin-top: -75px;
+    margin-left: 750px;
+    font-family: 'HILOGINCON', sans-serif;
+}
+
+.crew-picks h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
+}
+
+.crew-picks2 ul {
+    list-style-type: none;
+    padding: 0;
+    display: block; /* Altere para "block" para exibir os filmes verticalmente */
+    overflow: hidden; /* Para lidar com overflow vertical */
+}
+
+.crew-picks2 li {
+    margin-bottom: 10px; /* Espaço entre os filmes */
+    width: auto; /* Largura automática */
+}
+
+/* Estilo para a imagem do filme */
+.crew-picks2 img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+
+.crew-picks2 h3 {
+    color: #d8d8d8;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-left: 560px;
+}
+
+.crew-picks2 p {
+    text-align: center;
+    font-size: 10px;
+    margin-top: -75px;
+    margin-left: 750px;
+    font-family: 'HILOGINCON', sans-serif;
+}
+
+.crew-picks2 h2 {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.escolha-de-jogos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -295px;
+}
+
+.jogo {
+    width: calc(8.6% - 5px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.jogo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.jogo h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.jogo p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.escolha-de-jogos-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -295px;
+}
+
+.jogo-escolhido-2 {
+    width: calc(8.6% - 5px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.jogo-escolhido-2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.jogo-escolhido-2 h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.jogo-escolhido-2 p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.escolha-de-jogos-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -295px;
+}
+
+.jogo-escolhido-3 {
+    width: calc(8.6% - 5px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.jogo-escolhido-3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.jogo-escolhido-3 h3 {
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.jogo-escolhido-3 p {
+    font-family: 'HILOGINCON', sans-serif;
+    font-size: 1rem;
+    margin: 5px 0;
+}
