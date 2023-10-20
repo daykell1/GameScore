@@ -231,3 +231,131 @@ ul a {
 .upload-button:hover {
     background-color: #0056b3;
 }
+
+/* Estilos para o botão de upload de imagem personalizado */
+.upload-container {
+    display: flex;
+    align-items: center;
+}
+
+#imagemInput {
+    display: none;
+}
+
+.upload-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.upload-button:hover {
+    background-color: #258cd1;
+}
+
+/* Estilos para a imagem carregada */
+#uploadedImage {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 20px;
+}
+
+/* Estilos para o campo de entrada do nome do usuário */
+#userName {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+
+.author-container {
+    flex: 1;
+    text-align: center;
+}
+
+.separator {
+    color: white;
+}
+
+.author-container p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.image-text-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 600px;
+    text-align: left;
+    margin: auto;
+    gap: 20px;
+}
+
+.image-text-container figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-text-container img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.image-text-container p {
+    margin: 0;
+    color: white;
+}
+
+
+.
+        .image-text-container p {
+            margin: 0;
+            color: black;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-rows: 40% 60%;
+            grid-template-columns: 100%; /* 100% de largura para a linha superior */
+        }
+        
+        .grid-container .col1,
+.grid-container .col2 {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Duas colunas iguais com 50% de largura cada */
+    gap: 20px;
+    padding: 20px;
+    height: 60%; /* 60% de altura para a linha inferior */
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 100%; /* 100% de largura para a linha superior */
+}
+
+.grid-container .col1,
+.grid-container .col2 {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Duas colunas iguais com 50% de largura cada */
+    gap: 20px;
+    padding: 20px;
+    height: 60%; /* 60% de altura para a linha inferior */
+}
+
+.row1 {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Restante do seu CSS... */
