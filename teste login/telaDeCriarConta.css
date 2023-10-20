@@ -57,12 +57,12 @@
 
 /* Estilos para o container de termos e condições */
 .terms-container {
-    background-color: #cccaca;
+    background-color: rgb(35, 46, 77);
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
 /* Estilos para o texto dos termos e condições */
@@ -134,13 +134,14 @@ body {
     margin: 0;
 }
 
+
 /* Estilos para o contêiner */
 .container {
     display: flex;
     background-color: rgb(35, 46, 77);
     box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 60%;
     text-align: center;
     align-items: center; /* Centraliza verticalmente */
     justify-content: space-between; /* Cria espaço igual nas laterais */
@@ -150,11 +151,11 @@ body {
 /* Estilos para o formulário */
 form {
     background-color: rgb(35, 46, 77);
-    padding: 20px;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 55%; /* Ajuste a largura conforme necessário */
+    width: 65%; /* Ajuste a largura conforme necessário */
 }
 
 
@@ -175,11 +176,11 @@ body {
 
 /* Define o estilo para o contêiner do captcha */
 .captcha-container {
-    width: 60%; /* Define a largura do contêiner como 200 pixels */
+    width: 30%; /* Define a largura do contêiner como 200 pixels */
     margin: 10px auto; /* Centraliza o contêiner horizontalmente com margens superior e inferior de 50px */
-    background-color: #cccaca; /* Define a cor de fundo como branco (#fff) */
-    border: 5px solid #ccc; /* Adiciona uma borda de 1 pixel sólida com a cor cinza (#ccc) ao redor do contêiner */
-    padding: 40px; /* Define o espaçamento interno do contêiner como 20 pixels */
+    background-color:rgb(35, 46, 77); /* Define a cor de fundo como branco (#fff) */
+    border: 5px solid rgb(35, 46, 77); /* Adiciona uma borda de 1 pixel sólida com a cor cinza (#ccc) ao redor do contêiner */
+    padding: 20px; /* Define o espaçamento interno do contêiner como 20 pixels */
     text-align: center; /* Centraliza o texto dentro do contêiner horizontalmente */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Aplica uma sombra suave ao contêiner */
 }
@@ -243,13 +244,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
     border-radius: 5px;
 }
 
 /* Estilos para a imagem */
 .right-content img {
-    max-width: 100%; /* Largura máxima de 100% */
+    max-width: 80%; /* Largura máxima de 100% */
     height: auto; /* Altura automática proporcional à largura */
 }
+
 
 
