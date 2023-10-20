@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="teste.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+<body id="principal">
+    <div>
+        <ul class="navbar">
+            <li class="logo"><a href="#"><img src="GameScore.png"></a></li>
+            <li class="search-bar">
+                <form action="/pagina-de-resultados.html" method="GET">
+                    <div class="search-container">
+                        <input type="text" name="q" placeholder="Search..." autocomplete="off" />
+                        <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </div>
+                </form>
+            </li>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="sign-in"><a href="cadastro.html">Sign In</a></li>
+        </ul>
+       
+        <div class="upload-container">
+            <img id="uploadedImage" src="perfioadd.png" alt="Uploaded Image">
+            
+            <!-- Campo de entrada para o nome do usuário -->
+            <div style="display: flex; flex-direction: column;">
+                <input type="text" id="userName" placeholder="Digite seu nome">
+                <label for="imagemInput" class="upload-button" onclick="selecionarImagem()">
+                    <i class="fas fa-upload"></i> Carregar Imagem
+                </label>
+                <input type="file" id="imagemInput" style="display: none;">
+            </div>
+        </div>
+
+        <!-- Contêiner para a primeira imagem e texto -->
+        <div class="image-text-container">
+            <figure>
+                <img src="twitter.png" alt="Descrição da Imagem 1">
+                <figcaption>
+                    <p>Esta é uma imagem incrível que representa algo importante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </figcaption>
+            </figure>
+        </div>
+    
+        <!-- Contêiner para a segunda imagem e texto -->
+        <div class="image-text-container">
+            <figure>
+                <img src="instagram.png" alt="Descrição da Imagem 2">
+                <figcaption>
+                    <p>Outra imagem fascinante que conta uma história interessante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                    </div>
+                    <div class="footer-section links">
+                        <ul>
+                            <li><a href="/" class="social-link1">Home</a></li>
+                            <li><span class="separator1">|</span></li>
+                            <li><a href="/" class="social-link"><img src="facebook.png" alt="Facebook" class="facebook"></a></li>
+                            <li><a href="/" class="social-link"><img src="instagram.png" alt="Instagram" class="instagram"></a></li>
+                            <li><a href="/" class="social-link"><img src="twitter.png" alt="Twitter" class="twitter"></a></li>
+                            <li><a href="/" class="social-link"><img src="tiktok.png" alt="TikTok" class="tiktok"></a></li>
+                            <li><span class="separator2">|</span></li>
+                            <li><a href="/" class="social-link2">Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script>
+        function selecionarImagem() {
+            const imagemInput = document.getElementById('imagemInput');
+            const uploadedImage = document.getElementById('uploadedImage');
+
+            imagemInput.addEventListener('change', function () {
+                const arquivo = imagemInput.files[0];
+
+                if (arquivo) {
+                    const leitor = new FileReader();
+
+                    leitor.onload = function (e) {
+                        uploadedImage.src = e.target.result;
+                        uploadedImage.style.display = 'block';
+                    };
+
+                    leitor.readAsDataURL(arquivo);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+

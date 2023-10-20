@@ -395,7 +395,7 @@ ul a {
 .crew-picks {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5%;
-    background-color: #007bffcb;
+    background: linear-gradient(to bottom, #0062ca, #004793, #003c7d);
     padding: 20px;
     width: 250px;
     margin-left: 945px;
@@ -404,7 +404,7 @@ ul a {
 }
 
 .crew-picks2 {
-    background-color: #007bffcb;
+    background: linear-gradient(to bottom, #0062ca, #004793, #003c7d);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
     border-radius: 5%;
