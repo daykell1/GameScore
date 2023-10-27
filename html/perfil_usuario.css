@@ -316,7 +316,7 @@ ul a {
 }
 
 
-.
+
         .image-text-container p {
             margin: 0;
             color: black;
@@ -325,6 +325,7 @@ ul a {
             display: grid;
             grid-template-rows: 40% 60%;
             grid-template-columns: 100%; /* 100% de largura para a linha superior */
+            
         }
         
         .grid-container .col1,
@@ -338,7 +339,8 @@ ul a {
 .grid-container {
     display: grid;
     grid-template-rows: 40% 60%;
-    grid-template-columns: 100%; /* 100% de largura para a linha superior */
+    grid-template-columns: 100%;
+     /* 100% de largura para a linha superior */
 }
 
 .grid-container .col1,
@@ -351,11 +353,37 @@ ul a {
 }
 
 .row1 {
-    background-color: #f0f0f0;
+    background-color:  #35343D;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+}
+/* Adicione ou ajuste no seu CSS existente */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-controls {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Ajuste conforme necessário para o espaçamento desejado */
+}
+
+.other-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.other-button:hover {
+    background-color: #258cd1;
 }
 
 /* Restante do seu CSS... */
