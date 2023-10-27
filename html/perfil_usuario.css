@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/hilogin');
+
 #principal {
     background: #333;
     margin: 0;
@@ -284,78 +286,119 @@ ul a {
     color: white;
 }
 
-.author-container p {
-    margin: 0;
-    font-size: 20px;
-}
-
-.image-text-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    max-width: 600px;
-    text-align: left;
-    margin: auto;
-    gap: 20px;
-}
-
-.image-text-container figure {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.image-text-container img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.image-text-container p {
-    margin: 0;
-    color: white;
-}
-
-
-.
-        .image-text-container p {
-            margin: 0;
-            color: black;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-rows: 40% 60%;
-            grid-template-columns: 100%; /* 100% de largura para a linha superior */
-        }
-        
-        .grid-container .col1,
-.grid-container .col2 {
-    display: grid;
-    grid-template-columns: 50% 50%; /* Duas colunas iguais com 50% de largura cada */
-    gap: 20px;
-    padding: 20px;
-    height: 60%; /* 60% de altura para a linha inferior */
-}
+/* Estilos gerais para o grid-container */
+/* Estilos para o grid-container */
 .grid-container {
     display: grid;
-    grid-template-rows: 40% 60%;
-    grid-template-columns: 100%; /* 100% de largura para a linha superior */
-}
-
-.grid-container .col1,
-.grid-container .col2 {
-    display: grid;
-    grid-template-columns: 50% 50%; /* Duas colunas iguais com 50% de largura cada */
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    max-width: 600px;
+    margin: auto;
     padding: 20px;
-    height: 60%; /* 60% de altura para a linha inferior */
+    margin-left: 180px;
 }
 
 .row1 {
-    background-color: #f0f0f0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
 }
 
+.row1, h3{
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), rgb(0, 0, 0)darkblue;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
+    margin-left: -20px;
+}
+
+/* Estilos para a imagem de perfil */
+#uploadedImage {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+/* Estilos para o campo de entrada do nome do usuário */
+#userName {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Restante do CSS permanece o mesmo */
+
+
+/* Estilos para as abas de Revisões e Jogos Favoritos */
+/* Adicione essas regras CSS para col1 e col2 */
+.content-container {
+    display: flex; /* Torna os elementos filhos flexíveis */
+    justify-content: space-between; /* Coloca espaço entre eles */
+    width: 70%;
+    margin-left: 15%;
+}
+
+.reviews {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'HILOGINCON', sans-serif;
+}
+
+.col1, .col2 {
+    flex: 1; /* Ambos ocupam a mesma quantidade de espaço */
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px; /* Espaço entre eles */
+}
+
 /* Restante do seu CSS... */
+
+
+/* Estilos para os títulos das abas */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o conteúdo das abas */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #d8d8d8;
+}
+
+.image-text-container {
+    display: flex; /* Isso permite que a imagem e o texto fiquem lado a lado */
+    align-items: center; /* Alinhe verticalmente ao centro */
+    margin-bottom: 10px; /* Espaçamento inferior entre cada imagem e texto */
+}
+
+.image-text-container img {
+    width: 23%; /* Largura da imagem, ajuste conforme necessário */
+    height: auto; /* Isso mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-top: 20px;
+}
+
+.image-text-container p {
+    margin: 0; /* Remova a margem padrão do parágrafo para um espaçamento consistente */
+    font-size: 18px; /* Tamanho da fonte do texto, ajuste conforme necessário */
+}
+
+.star-rating {
+    font-size: 40px;
+    color: #FFD700;
+}
