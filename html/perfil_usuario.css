@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/hilogin');
+
 #principal {
     background: #333;
     margin: 0;
@@ -284,106 +286,6 @@ ul a {
     color: white;
 }
 
-.author-container p {
-    margin: 0;
-    font-size: 20px;
-}
-
-.image-text-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    max-width: 600px;
-    text-align: left;
-    margin: auto;
-    gap: 20px;
-}
-
-.image-text-container figure {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.image-text-container img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.image-text-container p {
-    margin: 0;
-    color: white;
-}
 
 
 
-        .image-text-container p {
-            margin: 0;
-            color: black;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-rows: 40% 60%;
-            grid-template-columns: 100%; /* 100% de largura para a linha superior */
-            
-        }
-        
-        .grid-container .col1,
-.grid-container .col2 {
-    display: grid;
-    grid-template-columns: 50% 50%; /* Duas colunas iguais com 50% de largura cada */
-    gap: 20px;
-    padding: 20px;
-    height: 60%; /* 60% de altura para a linha inferior */
-}
-.grid-container {
-    display: grid;
-    grid-template-rows: 40% 60%;
-    grid-template-columns: 100%;
-     /* 100% de largura para a linha superior */
-}
-
-.grid-container .col1,
-.grid-container .col2 {
-    display: grid;
-    grid-template-columns: 50% 50%; /* Duas colunas iguais com 50% de largura cada */
-    gap: 20px;
-    padding: 20px;
-    height: 60%; /* 60% de altura para a linha inferior */
-}
-
-.row1 {
-    background-color:  #35343D;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-/* Adicione ou ajuste no seu CSS existente */
-.user-info {
-    display: flex;
-    align-items: center;
-}
-
-.user-controls {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px; /* Ajuste conforme necessário para o espaçamento desejado */
-}
-
-.other-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.other-button:hover {
-    background-color: #258cd1;
-}
-
-/* Restante do seu CSS... */
