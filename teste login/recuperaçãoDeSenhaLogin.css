@@ -1,0 +1,81 @@
+/* Define estilos básicos para o corpo da página */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura da tela inteira */
+    background-color:  #1d2731; /* Cor de fundo */
+}
+
+/* Estilos para o container de recuperação de senha */
+.login-container  {
+    background: linear-gradient(to bottom, #003063, #001e3e);;
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 200px;
+    height: 300px;
+    max-width: 100%; /* Largura máxima */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.login-container p{
+    color:rgb(247, 247, 245);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o título de recuperação de senha */
+.login-title {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #007BFF; /* Cor do texto */
+    font-size: 30px; /* Tamanho da fonte */
+     
+  
+}
+
+/* Estilos para campos de entrada de recuperação de senha */
+.login-input {
+    background-color: #c9caca;
+    margin-left:-20px ;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #5f5d5d; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Estilos para o botão de recuperação de senha quando clicado */
+
+
+/* Estilos para o botão "Send" */
+.send-button {
+    background-color: #007BFF;
+    color: rgb(250, 247, 247);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+.send-button:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.9), 0 0 30px rgba(0, 123, 255, 0.7);
+}
+
+/* Estilos para o link "Return to Login" */
+.create-account a {
+    color: #0056b3;
+    text-decoration: none; /* Remova a decoração de link padrão */
+    margin-top: 20px;
+    display: block; /* Isso tornará o link uma largura completa e empurrará abaixo o botão "Send" */
+}
+
+
