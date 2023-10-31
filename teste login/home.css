@@ -7,16 +7,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
 ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #0D0D12;
     overflow: hidden;
-    display: flex; /*Usando flexbox para alinhar os itens horizontalmente */
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 70px;
@@ -29,11 +27,10 @@ li.game a, li.sing-in a  {
     text-decoration: none;
     margin-right: 5px;
     font-size: 20px;
-    font-family: 'HILOGINCON', sans-serif;
-    font-weight: 800; /* Espessura "Extra Bold" se desejado */
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
 }
 
-/* Estilos para os links quando o mouse está sobre eles */
 li.nav-item a:hover {
     background-color: #ddd;
     color: #0D0D12;
@@ -50,9 +47,9 @@ body {
 .barra-de-pesquisa {
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 500px; /* Largura original */
     padding: 9px;
-    background-color: white; 
+    background-color: white;
     border: 2px solid #ccc;
     border-radius: 10px;
     font-size: 16px;
@@ -66,9 +63,9 @@ body {
 }
 
 .barra-de-pesquisa input {
-    flex: 1; /* Expande a entrada para ocupar o espaço restante */
+    flex: 1;
     border: none;
-    background: none; /* Remove o fundo da entrada de texto */
+    background: none;
 }
 
 .lupa {
@@ -79,7 +76,7 @@ body {
 }
 
 .img img {
-    width: 150px;
+    width: 150px; /* Mantém o tamanho da imagem como estava antes */
     height: auto;
     margin-right: 150px;
 }
@@ -94,7 +91,7 @@ body {
 
 .jogos-favoritos h2 {
     margin-top: -100px;
-    color: #007BFF;
+    color: #ffffff;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
@@ -107,7 +104,7 @@ body {
 
 .jogos-negativos h2 {
     margin-top: 860px;
-    color: #007BFF;
+    color: #ffffff;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
@@ -218,7 +215,7 @@ body {
     transition: background-color 0.3s ease;
     outline: none;
     border: none;
-    margin: 305px;
+    margin: 315px;
 }
 
 /* Efeito de hover para os botões */
@@ -234,7 +231,7 @@ body {
 .carousel-prev {
     left: 0;
     margin-top: 115px;
-    margin-left: 303px;
+    margin-left: 313px;
 }
 
 .carousel-next {
@@ -259,11 +256,11 @@ body {
 
 .jogos-curtidos h2 {
     margin-top: 300px;
-    color: #007BFF;
+    color: #ffffff;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    margin-left: 300px;
+    margin-left: 310px;
     border-bottom: 2px solid #ddd; 
     display: inline-block;
     padding-bottom: 5px;
@@ -282,7 +279,7 @@ footer {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    line-height: 18px
+    line-height: 18px;
 }
 
 .footer-content {
@@ -523,7 +520,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -295px;
+    margin-left: -308px;
 }
 
 .jogo {
@@ -543,6 +540,8 @@ ul a {
 .jogo h3 {
     font-size: 1.2rem;
     margin: 5px 0;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
 }
 
 .jogo p {
@@ -572,6 +571,8 @@ ul a {
 }
 
 .jogo-escolhido-2 h3 {
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
     font-size: 1.2rem;
     margin: 5px 0;
 }
@@ -585,7 +586,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -295px;
+    margin-left: -308px;
 }
 
 .jogo-escolhido-3 {
@@ -610,7 +611,6 @@ ul a {
 }
 
 .jogo-escolhido-3 p {
-    font-family: 'HILOGINCON', sans-serif;
     font-size: 1rem;
     margin: 5px 0;
 }
