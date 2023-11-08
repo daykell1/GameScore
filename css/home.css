@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/hilogin');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +13,8 @@ ul.navbar {
     padding: 0;
     background-color: #0D0D12;
     overflow: hidden;
-    display: flex; /*Usando flexbox para alinhar os itens horizontalmente */
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 70px;
@@ -26,10 +28,9 @@ li.game a, li.sing-in a  {
     margin-right: 5px;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    font-weight: 800; /* Espessura "Extra Bold" se desejado */
+    font-weight: 800;
 }
 
-/* Estilos para os links quando o mouse está sobre eles */
 li.nav-item a:hover {
     background-color: #ddd;
     color: #0D0D12;
@@ -46,9 +47,9 @@ body {
 .barra-de-pesquisa {
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 500px; /* Largura original */
     padding: 9px;
-    background-color: white; 
+    background-color: white;
     border: 2px solid #ccc;
     border-radius: 10px;
     font-size: 16px;
@@ -62,9 +63,9 @@ body {
 }
 
 .barra-de-pesquisa input {
-    flex: 1; /* Expande a entrada para ocupar o espaço restante */
+    flex: 1;
     border: none;
-    background: none; /* Remove o fundo da entrada de texto */
+    background: none;
 }
 
 .lupa {
@@ -75,7 +76,7 @@ body {
 }
 
 .img img {
-    width: 150px;
+    width: 150px; /* Mantém o tamanho da imagem como estava antes */
     height: auto;
     margin-right: 150px;
 }
@@ -90,11 +91,11 @@ body {
 
 .jogos-favoritos h2 {
     margin-top: -100px;
-    color: #ddd;
+    color: #ffffff;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    margin-left: 320px;
+    margin-left: 300px;
     border-bottom: 2px solid #ddd;
     display: inline-block;
     padding-bottom: 5px;
@@ -103,11 +104,11 @@ body {
 
 .jogos-negativos h2 {
     margin-top: 860px;
-    color: #ddd;
+    color: #ffffff;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    margin-left: 320px;
+    margin-left: 300px;
     border-bottom: 2px solid #ddd;
     display: inline-block;
     padding-bottom: 5px;
@@ -151,7 +152,7 @@ body {
 
 .categoria{
     margin-top: 250px;
-    margin-left: 1120px;
+    margin-left: 1091px;
 }
 
 .categoria select {
@@ -214,7 +215,7 @@ body {
     transition: background-color 0.3s ease;
     outline: none;
     border: none;
-    margin: 305px;
+    margin: 315px;
 }
 
 /* Efeito de hover para os botões */
@@ -230,7 +231,7 @@ body {
 .carousel-prev {
     left: 0;
     margin-top: 115px;
-    margin-left: 303px;
+    margin-left: 313px;
 }
 
 .carousel-next {
@@ -246,20 +247,20 @@ body {
 }
 
 .banner-container img {
-    max-width: 910px;
+    max-width: 891px;
     max-height: 100%;
     object-fit: cover;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 18px;
 }
 
 .jogos-curtidos h2 {
     margin-top: 300px;
-    color: #ddd;
+    color: #ffffff;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    margin-left: 320px;
+    margin-left: 310px;
     border-bottom: 2px solid #ddd; 
     display: inline-block;
     padding-bottom: 5px;
@@ -270,14 +271,15 @@ footer {
     background-color: #272424;
     color: #fff;
     padding: 20px 0;
-    margin-top: 300px;
+    bottom: 0;
+    width: 100%;
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    line-height: 18px
+    line-height: 18px;
 }
 
 .footer-content {
@@ -388,26 +390,33 @@ ul a {
 
 /* Estilo para a seção Crew Picks */
 .crew-picks {
-    background-color: #9f9f9f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+    background: linear-gradient(to bottom, #0062ca, #004793, #003c7d);
     padding: 20px;
     width: 250px;
-    margin-left: 970px;
+    margin-left: 945px;
     margin-top: 55px;
     height: 360px;
 }
 
 .crew-picks2 {
-    background-color: #9f9f9f;
+    background: linear-gradient(to bottom, #0062ca, #004793, #003c7d);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
+    border-radius: 5%;
     width: 250px;
-    margin-left: 970px;
+    margin-left: 945px;
     margin-top: 55px;
     height: 360px;
 }
 
 /* Estilo para o título */
 .crew-picks h2 {
-    font-size: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
+    font-size: 22px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -440,19 +449,24 @@ ul a {
     font-size: 10px;
     margin-top: 0px;
     margin-left: 560px;
+    color: #d8d8d8;
 }
 
 .crew-picks p {
     text-align: center;
     font-size: 10px;
     margin-top: -75px;
-     margin-left: 750px;
+    margin-left: 750px;
+    font-family: 'HILOGINCON', sans-serif;
 }
 
 .crew-picks h2 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
 }
 
 .crew-picks2 ul {
@@ -478,6 +492,7 @@ ul a {
 }
 
 .crew-picks2 h3 {
+    color: #d8d8d8;
     text-align: center;
     font-size: 10px;
     margin-top: 0px;
@@ -489,10 +504,14 @@ ul a {
     font-size: 10px;
     margin-top: -75px;
     margin-left: 750px;
+    font-family: 'HILOGINCON', sans-serif;
 }
 
 .crew-picks2 h2 {
-    font-size: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
+    font-size: 22px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -501,7 +520,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -276px;
+    margin-left: -308px;
 }
 
 .jogo {
@@ -521,6 +540,8 @@ ul a {
 .jogo h3 {
     font-size: 1.2rem;
     margin: 5px 0;
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
 }
 
 .jogo p {
@@ -532,7 +553,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -276px;
+    margin-left: -295px;
 }
 
 .jogo-escolhido-2 {
@@ -550,6 +571,8 @@ ul a {
 }
 
 .jogo-escolhido-2 h3 {
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
     font-size: 1.2rem;
     margin: 5px 0;
 }
@@ -563,7 +586,7 @@ ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: -276px;
+    margin-left: -308px;
 }
 
 .jogo-escolhido-3 {
@@ -581,6 +604,8 @@ ul a {
 }
 
 .jogo-escolhido-3 h3 {
+    font-family: 'HILOGINCON', sans-serif;
+    color: #d8d8d8;
     font-size: 1.2rem;
     margin: 5px 0;
 }
